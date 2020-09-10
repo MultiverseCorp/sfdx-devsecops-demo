@@ -5,7 +5,7 @@ public with sharing class CandidateGradeController {
     @AuraEnabled
     public static CandidateGradeInfo getCandidateGrade(String contactId) { 
         
-        // Build the query
+        // Build the query 2
         String selectQueryString = 'SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = \'' + contactId + '\'';
         Contact currentContact = Database.query(selectQueryString);
 
@@ -13,10 +13,10 @@ public with sharing class CandidateGradeController {
         String temperature = '';
         Double commission = 0;
         
-        if (currentContact.Salary__c >= 100000 && Date.today().daysBetween(currentContact.NextAvailableDate__c) < 90 ) {
+        if (currentContact.Salary__c >= 1000000 && Date.today().daysBetween(currentContact.NextAvailableDate__c) < 90 ) {
             temperature = 'Hot';
         }
-        else if (currentContact.Salary__c < 100000 && Date.today().daysBetween(currentContact.NextAvailableDate__c) < 90 ) {
+        else if (currentContact.Salary__c < 1000000 && Date.today().daysBetween(currentContact.NextAvailableDate__c) < 90 ) {
             temperature = 'Medium';
         }
         else {
