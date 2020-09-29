@@ -27,7 +27,7 @@ public with sharing class CandidateGradeController {
         Map<String, Double> seniorityCommissionMap = new Map<String, Double>();
         seniorityCommissionMap.put('Senior',0.15);
         seniorityCommissionMap.put('Medium',0.1);
-        seniorityCommissionMap.put('Junior',0.05);
+        seniorityCommissionMap.put('Junior',0.06);
 
         if (seniorityCommissionMap.containsKey(currentUser.Seniority__c)) {
             commission = Double.valueOf(currentContact.Salary__c) * seniorityCommissionMap.get(currentUser.Seniority__c);
