@@ -43,6 +43,8 @@ public without sharing class SomeTestsForClayton {
     public static List<User> soqlInjectionExampleMixedApproach(String str) {
         String name =  str ;
         String squery = 'Select Id, Name from User Where UserName like  \'%' + name + '%'; 
+	String squery2 = 'Select Id, Name from User Where UserName like  \'%' + name + '%'; 
+	//This is a new comment
         List<User> users =  Database.query(squery);
         return users;
     }
