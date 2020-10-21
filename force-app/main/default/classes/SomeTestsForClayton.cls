@@ -1,4 +1,4 @@
-public without sharing class SomeTestsForClayton {
+public with sharing class SomeTestsForClayton {
 
     public static Integer divideNumberByZero() {
         integer a = 1 / 0;
