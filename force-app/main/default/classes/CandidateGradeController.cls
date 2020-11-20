@@ -9,7 +9,7 @@ public with sharing class CandidateGradeController {
         String selectQueryString = 'SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = \'' + contactId + '\'';
         Contact currentContact = Database.query(selectQueryString);
         
-        //Query 2
+        //Query 2 for tests
         String selectQueryString2 = 'SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = \'' + contactId + '\'';
 
         User currentUser = [SELECT Seniority__c FROM User where Id = :UserInfo.getUserId()];
