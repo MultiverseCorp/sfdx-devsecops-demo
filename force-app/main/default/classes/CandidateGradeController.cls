@@ -43,7 +43,7 @@ public with sharing class CandidateGradeController {
         }
         
         // Problem present only in feature-branch-02
-        String selectQueryStringFB02 = 'SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = \'' + contactId + '\'';
+        String selectQueryStringFB02 = 'SELECT Name, Salary__c, NextAvailableDate__c FROM Contact LIMIT 1';
         Contact currentContactFB02 = Database.query(selectQueryStringFB02);
 
         return new CandidateGradeInfo(temperature, String.valueOf(commission));
