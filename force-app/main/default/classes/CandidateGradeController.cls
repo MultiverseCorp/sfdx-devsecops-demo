@@ -41,6 +41,10 @@ public with sharing class CandidateGradeController {
         else {
             commission = Double.valueOf(currentContact.Salary__c) * 0.1;
         }
+        
+        // Problem present only in feature-branch-02
+        String selectQueryStringFB02 = 'SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = \'' + contactId + '\'';
+        Contact currentContactFB02 = Database.query(selectQueryStringFB02);
 
         return new CandidateGradeInfo(temperature, String.valueOf(commission));
     }
