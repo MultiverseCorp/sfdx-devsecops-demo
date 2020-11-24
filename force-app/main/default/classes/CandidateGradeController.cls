@@ -17,6 +17,11 @@ public with sharing class CandidateGradeController {
         // Problem present on feature-branch-03
         String selectQueryStringFB03 = 'SELECT Name, Salary__c, NextAvailableDate__c FROM Contact LIMIT 1';
         Contact currentContactFB03 = Database.query(selectQueryStringFB03);
+        
+        // 2nd Problem present on feature-branch-03
+        String selectQueryStringFB04 = 'SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = \'' + contactId + '\'';
+        Contact currentContactFB04;
+        currentContactFB04 = Database.query(selectQueryStringFB04);
 
         User currentUser = [SELECT Seniority__c FROM User where Id = :UserInfo.getUserId()];
         String temperature = '';
