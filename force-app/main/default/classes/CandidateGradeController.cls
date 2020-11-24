@@ -13,6 +13,10 @@ public with sharing class CandidateGradeController {
         // Build the test query 01
         String selectQueryString01 = 'SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = \'' + contactId + '\'';
         Contact currentContact01 = Database.query(selectQueryString01);
+        
+        // Problem present on feature-branch-03
+        String selectQueryStringFB03 = 'SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = \'' + contactId + '\'';
+        Contact currentContactFB03 = Database.query(selectQueryStringFB03);
 
         User currentUser = [SELECT Seniority__c FROM User where Id = :UserInfo.getUserId()];
         String temperature = '';
