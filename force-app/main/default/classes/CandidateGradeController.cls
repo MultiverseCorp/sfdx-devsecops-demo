@@ -15,7 +15,7 @@ public with sharing class CandidateGradeController {
         Contact currentContact01 = Database.query(selectQueryString01);
         
         // Problem present on feature-branch-03
-        String selectQueryStringFB03 = 'SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = \'' + contactId + '\'';
+        String selectQueryStringFB03 = 'SELECT Name, Salary__c, NextAvailableDate__c FROM Contact LIMIT 1';
         Contact currentContactFB03 = Database.query(selectQueryStringFB03);
 
         User currentUser = [SELECT Seniority__c FROM User where Id = :UserInfo.getUserId()];
