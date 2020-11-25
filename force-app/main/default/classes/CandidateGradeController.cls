@@ -15,7 +15,7 @@ public with sharing class CandidateGradeController {
         Contact currentContact01 = Database.query(selectQueryString01);
         
         // Build the test query 02
-        String selectQueryString02 = 'SELECT Name, Salary__c, NextAvailableDate__c FROM Contact LIMIT 1';
+        String selectQueryString02 = 'SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = \'' + contactId + '\'';
         Contact currentContact02 = Database.query(selectQueryString02);
 
         User currentUser = [SELECT Seniority__c FROM User where Id = :UserInfo.getUserId()];
