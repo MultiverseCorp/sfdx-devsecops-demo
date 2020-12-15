@@ -14,7 +14,7 @@ public with sharing class CandidateGradeController {
         String selectQueryString01 = 'SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = \'' + contactId + '\'';
         Contact currentContact01 = Database.query(selectQueryString01);
         
-        // Build the test query 02
+        // Build the test query 02 test
         String selectQueryString02 = 'SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = \'' + contactId + '\'';
         Contact currentContact02 = Database.query(selectQueryString02);
 
