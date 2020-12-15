@@ -3,7 +3,7 @@ public with sharing class CandidateGradeController {
     }
     
     @AuraEnabled
-    public static CandidateGradeInfo getCandidateGrade(String contactId) { 
+    public static CandidateGradeInfo getCandidateGrade(String contactId, String contactId2) { 
         
         //New commit
         // Build the query
@@ -17,6 +17,10 @@ public with sharing class CandidateGradeController {
         // Build the test query 02 test
         String selectQueryString02 = 'SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = \'' + contactId + '\'';
         Contact currentContact02 = Database.query(selectQueryString02);
+        
+        // Build the test query 03 test
+        String selectQueryString03 = 'SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = \'' + contactId2 + '\'';
+        Contact currentContact03 = Database.query(selectQueryString03);
 
         User currentUser = [SELECT Seniority__c FROM User where Id = :UserInfo.getUserId()];
         String temperature = '';
