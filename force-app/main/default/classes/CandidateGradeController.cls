@@ -3,6 +3,7 @@ public with sharing class CandidateGradeController {
     }
     
     //getCandidateGrade method used for tests.
+    //Test
     @AuraEnabled
     public static CandidateGradeInfo getCandidateGrade(String contactId) {
         // Build the query
