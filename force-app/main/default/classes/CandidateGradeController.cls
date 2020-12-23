@@ -2,7 +2,7 @@ public with sharing class CandidateGradeController {
     public CandidateGradeController() {   
     }
     
-    //Test 2
+    //Test 3
     @AuraEnabled
     public static CandidateGradeInfo getCandidateGrade(String contactId) {
         // Build the query
