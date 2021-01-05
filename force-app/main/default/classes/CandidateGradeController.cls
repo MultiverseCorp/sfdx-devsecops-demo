@@ -3,7 +3,7 @@ public with sharing class CandidateGradeController {
     }
     
     //New commit.
-    //getCandidateGrade method used for tests 006.
+    //getCandidateGrade method used for tests 007.
     @AuraEnabled
     public static CandidateGradeInfo getCandidateGrade(String contactId) {
         // Build the query
