@@ -3,7 +3,7 @@ public with sharing class CandidateGradeController {
     }
     
     //New commit.
-    //getCandidateGrade method used for tests.
+    //getCandidateGrade method used for tests 006.
     @AuraEnabled
     public static CandidateGradeInfo getCandidateGrade(Id contactId) {
         Contact currentContact = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
