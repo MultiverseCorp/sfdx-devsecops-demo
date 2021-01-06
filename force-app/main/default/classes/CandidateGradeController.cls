@@ -2,7 +2,7 @@ public with sharing class CandidateGradeController {
     public CandidateGradeController() {   
     }
     
-    //New commit.
+    //New commit for Slack
     //getCandidateGrade method used for tests 012.
     @AuraEnabled
     public static CandidateGradeInfo getCandidateGrade(Id contactId, String contactId2) {
