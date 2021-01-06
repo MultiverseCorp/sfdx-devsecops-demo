@@ -1,7 +1,7 @@
 public with sharing class CandidateGradeController {
     public CandidateGradeController() {   
     }
-    
+    //test spinning icon
     //New commit.
     //getCandidateGrade method used for tests.
     @AuraEnabled
