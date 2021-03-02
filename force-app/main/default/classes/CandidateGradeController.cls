@@ -37,7 +37,7 @@ public class CandidateGradeController {
         message.subject = 'Subject Test Message';
         message.plainTextBody = 'This is the message body.';
         Messaging.SingleEmailMessage[] messages =   new List<Messaging.SingleEmailMessage> {message};
-        Messaging.SendEmailResult[] results = Messaging.sendEmail(messages);
+       
 
         return new CandidateGradeInfo(temperature, String.valueOf(commission));
     }
