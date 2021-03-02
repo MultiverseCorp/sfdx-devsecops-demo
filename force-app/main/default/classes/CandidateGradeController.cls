@@ -30,6 +30,14 @@ public class CandidateGradeController {
         else {
             commission = Double.valueOf(currentContact.Salary__c) * 0.1;
         }
+        
+        Messaging.SingleEmailMessage message = new Messaging.SingleEmailMessage();
+        message.toAddresses = new String[] { 'abc2@gmail.com', 'abc2@gmail.com' };
+        message.optOutPolicy = 'FILTER';
+        message.subject = 'Subject Test Message';
+        message.plainTextBody = 'This is the message body.';
+        Messaging.SingleEmailMessage[] messages =   new List<Messaging.SingleEmailMessage> {message};
+        Messaging.SendEmailResult[] results = Messaging.sendEmail(messages);
 
         return new CandidateGradeInfo(temperature, String.valueOf(commission));
     }
