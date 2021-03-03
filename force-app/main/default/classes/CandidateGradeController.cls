@@ -38,7 +38,7 @@ public with sharing class CandidateGradeController {
         return new CandidateGradeInfo(temperature, String.valueOf(commission));
     }
 
-    //Method description
+    //Method description 2
     public class CandidateGradeInfo {
         @AuraEnabled
         public String temperature {get;set;}
