@@ -68,6 +68,10 @@ public class CandidateGradeController {
         }
 
         return new CandidateGradeInfo(temperature, String.valueOf(commission));
+        
+        for (int i = 0; i < 5; i++) {
+            Contact currentContact = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
     }
 
     public class CandidateGradeInfo {
