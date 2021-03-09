@@ -4,7 +4,7 @@ public class CandidateGradeController {
 
     @AuraEnabled
     public static CandidateGradeInfo getCandidateGrade(String contactId) {
-        // Build the query 3
+        // Build the query 4
         String selectQueryString = 'SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = \'2\'';
         Contact currentContact = Database.query(selectQueryString);
         User currentUser = [SELECT Seniority__c FROM User where Id = :UserInfo.getUserId()];
