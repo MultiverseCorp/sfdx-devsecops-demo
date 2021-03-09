@@ -2,7 +2,6 @@ public class CandidateGradeController {
     public CandidateGradeController() {   
     }
 
-    //Test comment
     @AuraEnabled
     public static CandidateGradeInfo getCandidateGrade(Id contactId) {
         Contact currentContact = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
