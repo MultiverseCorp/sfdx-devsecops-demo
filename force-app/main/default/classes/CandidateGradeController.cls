@@ -36,10 +36,6 @@ public class CandidateGradeController {
             Contact currentContact2 = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
         }
         
-        for (int i = 0; i < 5; i++) {
-            Contact currentContact2 = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
-        }
-        
         return new CandidateGradeInfo(temperature, String.valueOf(commission));
     }
     
