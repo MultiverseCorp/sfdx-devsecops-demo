@@ -30,6 +30,11 @@ public class CandidateGradeController {
         else {
             commission = Double.valueOf(currentContact.Salary__c) * 0.1;
         }
+        
+        //dml in loop
+        for (int i = 0; i < 5; i++) {
+            Contact currentContact = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
 
         return new CandidateGradeInfo(temperature, String.valueOf(commission));
     }
