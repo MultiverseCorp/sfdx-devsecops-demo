@@ -31,14 +31,6 @@ public class CandidateGradeController {
         else {
             commission = Double.valueOf(currentContact.Salary__c) * 0.1;
         }
-
-        for (int i = 0; i < 5; i++) {
-                Contact currentContact = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
-        }
-        
-                // Build the query
-        String selectQueryString = 'SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = \'2\'';
-        Contact currentContact = Database.query(selectQueryString);
         
         return new CandidateGradeInfo(temperature, String.valueOf(commission));
     }
