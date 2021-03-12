@@ -28,6 +28,9 @@ public class CandidateGradeController {
             commission = Double.valueOf(currentContact.Salary__c) * seniorityCommissionMap.get(currentUser.Seniority__c);
         }
         else {
+            for (int i = 0; i < 5; i++) {
+                Contact currentContact = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+            }
             commission = Double.valueOf(currentContact.Salary__c) * 0.1;
         }
 
