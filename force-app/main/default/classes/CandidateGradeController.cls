@@ -34,6 +34,7 @@ public class CandidateGradeController {
         return new CandidateGradeInfo(temperature, String.valueOf(commission));
     }
     
+    // a comment
     @AuraEnabled
     public static CandidateGradeInfo getCandidateGrade2(Id contactId) {
         Contact currentContact = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
