@@ -3,13 +3,13 @@ public class CandidateGradeController {
     }
 
     @AuraEnabled
-    public static CandidateGradeInfo getCandidateGrade(Id contactId, String addressDefault) {
+    public static CandidateGradeInfo getCandidateGrade(Id contactId, Long salaryDefault) {
         Contact currentContact = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
         User currentUser = [SELECT Seniority__c FROM User where Id = :UserInfo.getUserId()];
         String temperature = '';
         Double commission = 0;
         
-        String addressType = [SELECT Address_Type__c FROM Address__c WHERE Default_Address__c = :addressDefault];
+        Long salary = [SELECT Salary__c FROM Contact WHERE Salary__c = :salaryDefault];
         
         if (currentContact.Salary__c >= 100000 && Date.today().daysBetween(currentContact.NextAvailableDate__c) < 90 ) {
             temperature = 'Hot';
