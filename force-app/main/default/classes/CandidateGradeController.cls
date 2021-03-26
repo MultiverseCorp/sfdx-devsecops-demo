@@ -9,7 +9,7 @@ public class CandidateGradeController {
         String temperature = '';
         Double commission = 0;
         
-        String addressType = [SELECT Address_Type__c FROM Address__c WHERE Default_Address__c = 1 OR Default_Address__c = :addressDefault];
+        String addressType = [SELECT Address_Type__c FROM Address__c WHERE Default_Address__c = 'a' OR Default_Address__c = :addressDefault];
         
         if (currentContact.Salary__c >= 100000 && Date.today().daysBetween(currentContact.NextAvailableDate__c) < 90 ) {
             temperature = 'Hot';
