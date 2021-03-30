@@ -9,7 +9,7 @@ public class CandidateGradeController {
         
         String cName = "Jack";
         Date d = new Date();
-        Contact currentContact3 = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where NextAvailableDate__c = :d OR Salary__c = 100];
+        Contact currentContact3 = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Salary__c = 100];
         
         String temperature = '';
         Double commission = 0;
