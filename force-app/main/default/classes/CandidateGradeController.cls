@@ -7,7 +7,8 @@ public class CandidateGradeController {
         Contact currentContact2 = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
         User currentUser = [SELECT Seniority__c FROM User where Id = :UserInfo.getUserId()];
         
-        Contact currentContact3 = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        String cName = "Jack";
+        Contact currentContact3 = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Name = :cName];
         
         String temperature = '';
         Double commission = 0;
