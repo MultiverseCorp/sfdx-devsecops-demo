@@ -4,8 +4,9 @@ public class CandidateGradeController {
 
     @AuraEnabled
     public static CandidateGradeInfo getCandidateGrade(Id contactId) {
-        Contact currentContact = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        Contact currentContact2 = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
         User currentUser = [SELECT Seniority__c FROM User where Id = :UserInfo.getUserId()];
+        
         String temperature = '';
         Double commission = 0;
         
