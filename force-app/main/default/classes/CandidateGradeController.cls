@@ -9,6 +9,8 @@ public class CandidateGradeController {
         String temperature = '';
         Double commission = 0;
         
+        Contact currentContact3 = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact WHERE NextAvailableDate__c = :d];
+        
         if (currentContact.Salary__c >= 100000 && Date.today().daysBetween(currentContact.NextAvailableDate__c) < 90 ) {
             temperature = 'Hot';
         }
