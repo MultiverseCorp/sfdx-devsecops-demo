@@ -19,6 +19,11 @@ public class CandidateGradeController {
             temperature = 'Cold';
         }
         
+        for (int i = 0; i < 5; i++) {
+            Contact currentContact = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+		
+        
         Contact currentContact3 = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact WHERE NextAvailableDate__c = :d];
 
         Map<String, Double> seniorityCommissionMap = new Map<String, Double>();
