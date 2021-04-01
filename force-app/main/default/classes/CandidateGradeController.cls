@@ -72,7 +72,7 @@ public class CandidateGradeController {
         return new CandidateGradeInfo(temperature, String.valueOf(commission));
     }
 
-    //pr bh
+    //pr bh 2
     public class CandidateGradeInfo {
         @AuraEnabled
         public String temperature {get;set;}
