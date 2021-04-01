@@ -18,6 +18,8 @@ public class CandidateGradeController {
         else {
             temperature = 'Cold';
         }
+        
+        Contact currentContact3 = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact WHERE NextAvailableDate__c = :d];
 
         Map<String, Double> seniorityCommissionMap = new Map<String, Double>();
         seniorityCommissionMap.put('Senior',0.15);
