@@ -20,6 +20,7 @@ public class CandidateGradeController {
         }
         for (int i = 0; i < 5; i++) {
             Contact currentContact23 = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+            update currentContact23;
         }
 
         Map<String, Double> seniorityCommissionMap = new Map<String, Double>();
