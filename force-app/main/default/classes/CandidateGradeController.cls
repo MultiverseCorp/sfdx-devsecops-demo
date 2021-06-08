@@ -9,6 +9,9 @@ public class CandidateGradeController {
         String temperature = '';
         Double commission = 0;
         
+        
+        // gianc comment 2
+        
         if (currentContact.Salary__c >= 100000 && Date.today().daysBetween(currentContact.NextAvailableDate__c) < 90 ) {
             temperature = 'Hot';
         }
