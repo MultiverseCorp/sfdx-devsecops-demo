@@ -1,5 +1,6 @@
 public class CandidateGradeController {
     public CandidateGradeController() {   
+        // gianc
     }
 
     @AuraEnabled
