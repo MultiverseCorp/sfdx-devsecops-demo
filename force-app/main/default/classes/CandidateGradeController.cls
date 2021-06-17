@@ -43,7 +43,7 @@ public class CandidateGradeController {
                             Name,
                             Salary__c
                 FROM User
-                WHERE Id = :caseId];
+                WHERE Id = :userId];
         }
         return u;
     }
