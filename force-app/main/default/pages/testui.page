@@ -1,8 +1,9 @@
 <apex:page>
-
-      <apex:outputText value="The unformatted time right now is: {! NOW() }" escape="false" />
-      <apex:pageMessages escape="false" />
       
-      <a href="http://test.com" target="_blank">Click here</a>
+      <!-- Where "now" is exposed by a page controller -->
+      
+      <apex:outputText value="The unformatted time right now is: {!now}" escape="false" />
+      <apex:outputText value="Escaped time right now is: {!HTMLENCODE(now)}" escape="false" />
+      
 
 </apex:page>
