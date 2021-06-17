@@ -34,6 +34,20 @@ public class CandidateGradeController {
         return new CandidateGradeInfo(temperature, String.valueOf(commission));
     }
     
+    public static User getUserDetails(String userId){
+        User u;
+        if(userId != null){
+            u = [SELECT    Id,
+                            Seniority__c,
+                            NextAvailableDate__c,
+                            Name,
+                            Salary__c
+                FROM User
+                WHERE Id = :caseId];
+        }
+        return u;
+    }
+    
     @AuraEnabled
     public static CandidateGradeInfo getCandidateGrade2(Id contactId) {
         Contact currentContact = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
