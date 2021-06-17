@@ -32,8 +32,16 @@ public class CandidateGradeController {
         }
         
         System.debug(UserInfo.getSessionId());
+        
+        for(integer i = 0; i < 100; i++) {
+            DMLmethod(contactId);
+        }
 
         return new CandidateGradeInfo(temperature, String.valueOf(commission));
+    }
+    
+    public static string DMLmethod(Id cId){
+        Contact currentContact = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
     }
     
     @AuraEnabled
