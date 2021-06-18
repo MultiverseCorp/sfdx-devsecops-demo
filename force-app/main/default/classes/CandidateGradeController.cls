@@ -5,7 +5,7 @@ public class CandidateGradeController {
     // un commento
 
     @AuraEnabled
-    public static CandidateGradeInfo getCandidateGrade(Id contactId) {
+    public static CandidateGradeInfo getCandidateGrade(Id contactId, String cid) {
         Contact currentContact = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
         User currentUser = [SELECT Seniority__c FROM User where Id = :UserInfo.getUserId()];
         String temperature = '';
@@ -35,7 +35,22 @@ public class CandidateGradeController {
             commission = Double.valueOf(currentContact.Salary__c) * 0.1;
         }
 
+        getUser(cid);
+
+        for(integer i = 0; i < 100; i++) {
+            DMLmethod(contactId);
+        }
+
         return new CandidateGradeInfo(temperature, String.valueOf(commission));
+    }
+
+    @AuraEnabled
+    public static User getUser(String id){
+       return [SELECT Seniority__c FROM User where Id =: id]; //This can be a DML too
+    }
+    
+    public static string DMLmethod(Id cId){
+        Contact currentContact = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :cId];
     }
     
     @AuraEnabled
