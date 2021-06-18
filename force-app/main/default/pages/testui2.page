@@ -1,0 +1,5 @@
+<apex:page>
+    <apex:outputText value="{!$CurrentPage.Parameters.id}" escape="false" />
+    <apex:outputText value="NOW: {!NOW()}" escape="false" />
+    <apex:outputText value="{!aVariable}" escape="false" />
+</apex:page>
