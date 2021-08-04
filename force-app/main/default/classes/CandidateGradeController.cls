@@ -11,17 +11,17 @@ public with sharing class CandidateGradeController {
 
         User currentUser = [SELECT Seniority__c FROM User where Id = :UserInfo.getUserId()];
         String temperature = '';
-        Double commission = 0;
+        Double commission = 10;
         
         // set the temperature
         if (currentContact.Salary__c >= 50 && Date.today().daysBetween(currentContact.NextAvailableDate__c) < 90 ) {
             temperature = 'Not Very Hot';
         }
         else if (currentContact.Salary__c < 50 && Date.today().daysBetween(currentContact.NextAvailableDate__c) < 90 ) {
-            temperature = 'Medium';
+            temperature = 'Quite Medium';
         }
         else {
-            temperature = 'Cold';
+            temperature = 'Very Cold';
         }
 
         Map<String, Double> seniorityCommissionMap = new Map<String, Double>();
