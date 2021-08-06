@@ -15,13 +15,13 @@ public with sharing class CandidateGradeController {
         
         // set the temperature
         if (currentContact.Salary__c >= 100000 && Date.today().daysBetween(currentContact.NextAvailableDate__c) < 90 ) {
-            temperature = 'Hot';
+            temperature = 'Extremely Hot';
         }
         else if (currentContact.Salary__c < 100000 && Date.today().daysBetween(currentContact.NextAvailableDate__c) < 90 ) {
             temperature = 'Medium';
         }
         else {
-            temperature = 'Cold';
+            temperature = 'Not so Cold';
         }
 
         Map<String, Double> seniorityCommissionMap = new Map<String, Double>();
