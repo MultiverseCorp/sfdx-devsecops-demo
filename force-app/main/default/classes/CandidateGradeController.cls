@@ -3,8 +3,10 @@ public class CandidateGradeController {
     }
     
     @AuraEnabled
-    public static User getUser(String userId){
-        return [SELECT Seniority__c FROM User WHERE Id := userId];
+    public static User getUser(String userIdString){
+        String selectQueryStringUser = 'SELECT Seniority__c FROM User WHERE Id = \'' + userIdString + '\'';
+        User currentUser = Database.query(selectQueryStringUser);
+        return currentUser;
     }
 
     @AuraEnabled
