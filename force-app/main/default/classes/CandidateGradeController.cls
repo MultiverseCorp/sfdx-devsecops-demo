@@ -1,6 +1,11 @@
 public class CandidateGradeController {
     public CandidateGradeController() {   
     }
+    
+    @AuraEnabled
+    public static User getUser(Id userId){
+        return [SELECT Seniority__c FROM User WHERE Id := userId];
+    }
 
     @AuraEnabled
     public static CandidateGradeInfo getCandidateGrade(Id contactId) {
