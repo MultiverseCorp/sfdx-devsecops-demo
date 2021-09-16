@@ -3,7 +3,7 @@ public class CandidateGradeController {
     }
     
     @AuraEnabled
-    public static User getUser(Id userId){
+    public static User getUser(String userId){
         return [SELECT Seniority__c FROM User WHERE Id = :userId];
     }
     
@@ -16,7 +16,7 @@ public class CandidateGradeController {
     @AuraEnabled
     public static CandidateGradeInfo getCandidateGrade(Id contactId, Id uId, String userIdString) {
         
-        User u = getUser(uId);
+        User u = getUser(userIdString);
         User u2 = getUserByString(userIdString);
         
         Contact currentContact = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
