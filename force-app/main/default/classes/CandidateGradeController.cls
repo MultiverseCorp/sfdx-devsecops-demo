@@ -3,14 +3,12 @@ public class CandidateGradeController {
     }
     
     @AuraEnabled
-    public static User getUser(String userIdString){
-        String selectQueryStringUser = 'SELECT Seniority__c FROM User WHERE Id = \'' + userIdString + '\'';
-        User currentUser = Database.query(selectQueryStringUser);
-        return currentUser;
+    public static User getUser(Id userId){
+        return [SELECT Seniority__c FROM User WHERE Id := userId];
     }
 
     @AuraEnabled
-    public static CandidateGradeInfo getCandidateGrade(Id contactId, String uId) {
+    public static CandidateGradeInfo getCandidateGrade(Id contactId, Id uId) {
         
         User u = getUser(uId);
         
