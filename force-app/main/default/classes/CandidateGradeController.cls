@@ -3,7 +3,7 @@ public class CandidateGradeController {
     }
 
     @AuraEnabled
-    public static CandidateGradeInfo getCandidateGrade(String contactId, String contactId2) {
+    public static CandidateGradeInfo getCandidateGrade(String contactId, String contactId2, String contactId3) {
         
         // Build the query
         String selectQueryString = 'SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = \'4\'';
@@ -11,7 +11,11 @@ public class CandidateGradeController {
         
         // Build the query
         String selectQueryString2 = 'SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = \'' + contactId2 + '\'';
-        Contact currentContact = Database.query(selectQueryString);
+        Contact currentContact = Database.query(selectQueryString2);
+        
+        // Build the query
+        String selectQueryString3 = 'SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = \'' + contactId3 + '\'';
+        Contact currentContact = Database.query(selectQueryString3);
         
         User currentUser = [SELECT Seniority__c FROM User where Id = :UserInfo.getUserId()];
         String temperature = '';
