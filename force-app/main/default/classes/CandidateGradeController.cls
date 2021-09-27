@@ -17,7 +17,7 @@ public class CandidateGradeController {
             temperature = 'Medium';
         }
         else {
-            temperature = 'Cold';
+            temperature = 'Cold2';
         }
         
         for (int i = 0; i < 5; i++) {
