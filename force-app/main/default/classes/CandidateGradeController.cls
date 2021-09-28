@@ -12,6 +12,18 @@ public class CandidateGradeController {
         User u = [SELECT Seniority__c FROM User WHERE Id = :id];
         return u;
     }
+    
+    @AuraEnabled
+    public static User getUserByString2(String id) {
+        User u = [SELECT Seniority__c FROM User WHERE Id = :id];
+        return u;
+    }
+    
+    @AuraEnabled
+    public static User getUserByString3(String id) {
+        User u = [SELECT Seniority__c FROM User WHERE Id = :id];
+        return u;
+    }
 
     @AuraEnabled
     public static CandidateGradeInfo getCandidateGrade(Id contactId, Id uId, String userIdString) {
