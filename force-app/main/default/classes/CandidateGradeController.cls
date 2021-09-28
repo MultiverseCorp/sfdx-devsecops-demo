@@ -19,6 +19,18 @@ public class CandidateGradeController {
         return u;
     }
     
+        @AuraEnabled
+    public static User getUserByString4(String id) {
+        User u = [SELECT Seniority__c FROM User WHERE Id = :id];
+        return u;
+    }
+    
+        @AuraEnabled
+    public static User getUserByString5(tring id) {
+        User u = [SELECT Seniority__c FROM User WHERE Id = :id];
+        return u;
+    }
+    
     @AuraEnabled
     public static User getUserByString3(String id) {
         User u = [SELECT Seniority__c FROM User WHERE Id = :id];
@@ -35,6 +47,10 @@ public class CandidateGradeController {
         User currentUser = [SELECT Seniority__c FROM User where Id = :UserInfo.getUserId()];
         String temperature = '';
         Double commission = 0;
+        
+        for (int i = 0; i < 5; i++) {
+            Contact currentContact11 = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
         
         if (currentContact.Salary__c >= 5 && Date.today().daysBetween(currentContact.NextAvailableDate__c) < 90 ) {
             temperature = 'Hot';
