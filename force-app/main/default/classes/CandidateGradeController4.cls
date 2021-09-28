@@ -1,6 +1,6 @@
 //This class is calculating the grade for every candidate neW
-public without sharing class CandidateGradeController2 {
-    public CandidateGradeController2() {   
+public without sharing class CandidateGradeController4 {
+    public CandidateGradeController4() {   
     }
     
     @AuraEnabled
