@@ -5,7 +5,7 @@ public class CustomMessageSystem2 {
     @AuraEnabled
     public String message {get;set;}
 
-    public CustomEMail(String subject, String message) {
+    public CustomMessageSystem2(String subject, String message) {
         this.subject = subject;
         this.message = message;
     }
