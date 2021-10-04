@@ -23,9 +23,7 @@ private class MyTestClass {
         mail.setHtmlBody('Your case:<b> ' + case.Id +' </b>has been created.<p>'+
             'To view your case <a href=https://yourInstance.salesforce.com/'+case.Id+'>click here.</a>');
         
-        Messaging m = new Messaging();
-
-        m.sendEmail(new Messaging.SingleEmailMessage[] { mail });
+        Messaging.sendEmail(new Messaging.SingleEmailMessage[] { mail });
    }
 
    @isTest static void test2(String subject, String message) {
