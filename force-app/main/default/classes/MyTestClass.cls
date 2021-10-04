@@ -52,7 +52,7 @@ private class MyTestClass {
    }
    
    @isTest static void test3(String subject, String message) {
-      CustomMessageSystem2 cms = new CustomMessageSystem2();
+      CustomMessageSystem2 cms2 = new CustomMessageSystem2();
       
       Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
 
@@ -73,7 +73,7 @@ private class MyTestClass {
         mail.setHtmlBody('Your case:<b> ' + case.Id +' </b>has been created.<p>'+
             'To view your case <a href=https://yourInstance.salesforce.com/'+case.Id+'>click here.</a>');
       
-      cms.sendEmail(new Messaging.SingleEmailMessage[] { mail });
+      cms2.sendEmail(new Messaging.SingleEmailMessage[] { mail });
    }
 
 }
