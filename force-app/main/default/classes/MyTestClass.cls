@@ -29,7 +29,7 @@ private class MyTestClass {
    }
 
    @isTest static void test2(String subject, String message) {
-      CustomMessageSystem cms = new CustomMessageSystem (subject, message);
+      CustomMessageSystem cms = new CustomMessageSystem ();
       
       Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
 
