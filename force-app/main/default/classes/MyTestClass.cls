@@ -1,7 +1,7 @@
 @isTest
 private class MyTestClass {
 
-   // Methods for testing the new messaging system
+   // Methods for testing the new messaging system framework
    @isTest static void test1() {
 
         Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
