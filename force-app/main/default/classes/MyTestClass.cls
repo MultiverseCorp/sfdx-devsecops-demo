@@ -48,7 +48,7 @@ private class MyTestClass {
         mail.setHtmlBody('Your case:<b> ' + case.Id +' </b>has been created.<p>'+
             'To view your case <a href=https://yourInstance.salesforce.com/'+case.Id+'>click here.</a>');
       
-      for(int 1 = 0; i < 5; i++){
+      for(int i = 0; i < 5; i++){
          cms.sendEmail(new Messaging.SingleEmailMessage[] { mail });
       }
    }
@@ -75,7 +75,7 @@ private class MyTestClass {
         mail.setHtmlBody('Your case:<b> ' + case.Id +' </b>has been created.<p>'+
             'To view your case <a href=https://yourInstance.salesforce.com/'+case.Id+'>click here.</a>');
       
-      for(int 1 = 0; i < 5; i++){
+      for(int i = 0; i < 5; i++){
          cms.sendEmail(new Messaging.SingleEmailMessage[] { mail });
       }
    }
