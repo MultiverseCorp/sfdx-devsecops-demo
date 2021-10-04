@@ -54,7 +54,7 @@ private class MyTestClass {
    }
    
    @isTest static void test3(String subject, String message) {
-      CustomMessageSystem2 cms = new CustomMessageSystem2();
+      CustomMessageSystemV2 cms = new CustomMessageSystemV2();
       
       Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
 
