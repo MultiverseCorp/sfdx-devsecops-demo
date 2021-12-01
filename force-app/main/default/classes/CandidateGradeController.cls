@@ -10,6 +10,9 @@ public class CandidateGradeController {
         String selectQueryString = 'SELECT Name, Salary__c FROM Contact where Id = \'' + contactId3 + '\'';
         Contact currentContact = Database.query(selectQueryString);
         
+        String selectQueryString2 = 'SELECT Name, Salary__c FROM Contact where Id = \'' + contactId3 + '\'';
+        Contact currentContact2 = Database.query(selectQueryString2);
+        
         User currentUser = [SELECT Seniority__c FROM User where Id = :UserInfo.getUserId()];
         String temperature = '';
         Double commission = 0;
