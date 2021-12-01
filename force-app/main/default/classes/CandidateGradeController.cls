@@ -7,7 +7,7 @@ public class CandidateGradeController {
     public static CandidateGradeInfo getCandidateGrade(Id contactId, String contactId3) {
         
         // Build the query
-        String selectQueryString = 'SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = \'' + contactId3 + '\'';
+        String selectQueryString = 'SELECT Name, Salary__c FROM Contact where Id = \'' + contactId3 + '\'';
         Contact currentContact = Database.query(selectQueryString);
         
         User currentUser = [SELECT Seniority__c FROM User where Id = :UserInfo.getUserId()];
