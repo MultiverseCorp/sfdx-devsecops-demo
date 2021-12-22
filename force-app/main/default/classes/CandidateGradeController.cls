@@ -3,7 +3,6 @@ public class CandidateGradeController {
     }
 
     @AuraEnabled
-
     public static CandidateGradeInfo getCandidateGrade(String contactId) { 
         
         // Build the query
