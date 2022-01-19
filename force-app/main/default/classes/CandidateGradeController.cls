@@ -8,20 +8,16 @@ public with sharing class CandidateGradeController {
         // Build the query
         String selectQueryString = 'SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = \'' + contactId + '\'';
         Contact currentContact = Database.query(selectQueryString);
-        
-        // Build the test query 01
-        String selectQueryString01 = 'SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = \'' + contactId + '\'';
-        Contact currentContact01 = Database.query(selectQueryString01);
 
         User currentUser = [SELECT Seniority__c FROM User where Id = :UserInfo.getUserId()];
         String temperature = '';
         Double commission = 0;
         
         // set the temperature
-        if (currentContact.Salary__c >= 100000 && Date.today().daysBetween(currentContact.NextAvailableDate__c) < 90 ) {
+        if (currentContact.Salary__c >= 400 && Date.today().daysBetween(currentContact.NextAvailableDate__c) < 90 ) {
             temperature = 'Hot';
         }
-        else if (currentContact.Salary__c < 100000 && Date.today().daysBetween(currentContact.NextAvailableDate__c) < 90 ) {
+        else if (currentContact.Salary__c < 400 && Date.today().daysBetween(currentContact.NextAvailableDate__c) < 90 ) {
             temperature = 'Medium';
         }
         else {
