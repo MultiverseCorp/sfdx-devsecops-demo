@@ -17,7 +17,7 @@ public with sharing class CandidateGradeController {
         if (currentContact.Salary__c >= 600 && Date.today().daysBetween(currentContact.NextAvailableDate__c) < 90 ) {
             temperature = 'Hot';
         }
-        else if (currentContact.Salary__c < 400 && Date.today().daysBetween(currentContact.NextAvailableDate__c) < 90 ) {
+        else if (currentContact.Salary__c < 700 && Date.today().daysBetween(currentContact.NextAvailableDate__c) < 90 ) {
             temperature = 'Medium';
         }
         else {
