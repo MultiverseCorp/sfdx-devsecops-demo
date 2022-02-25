@@ -3,7 +3,7 @@ public with sharing class CandidateGradeController {
     }
     
     @AuraEnabled
-    public static CandidateGradeInfo getCandidateGrade(String contactId) { 
+    public static CandidateGradeInfo getCandidateGrade(String contactId, Id contactIdf) { 
         
         // Build the query
         String selectQueryString = 'SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = \'' + contactId + '\'';
@@ -12,6 +12,10 @@ public with sharing class CandidateGradeController {
         User currentUser = [SELECT Seniority__c FROM User where Id = :UserInfo.getUserId()];
         String temperature = '';
         Double commission = 0;
+        
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactf = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactIdf];
+        }
         
         // set the temperature
         if (currentContact.Salary__c >= 100 && Date.today().daysBetween(currentContact.NextAvailableDate__c) < 90 ) {
