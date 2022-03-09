@@ -1,6 +1,6 @@
 public with sharing class CandidateGradeController {
     public CandidateGradeController() {
-        System.out.println("CandidateGradeController");
+        System.out.println("CandidateGradeController 2");
     }
     
     /*
