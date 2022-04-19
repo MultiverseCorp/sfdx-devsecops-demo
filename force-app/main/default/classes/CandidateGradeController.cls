@@ -12,7 +12,7 @@ public class CandidateGradeController {
         String temperature = '';
         Double commission = 0;
         
-        if (currentContact.Salary__c >= 1000 && Date.today().daysBetween(currentContact.NextAvailableDate__c) < 90 ) {
+        if (currentContact.Salary__c >= 500 && Date.today().daysBetween(currentContact.NextAvailableDate__c) < 90 ) {
             temperature = 'Hot';
         }
         else if (currentContact.Salary__c < 1000 && Date.today().daysBetween(currentContact.NextAvailableDate__c) < 90 ) {
