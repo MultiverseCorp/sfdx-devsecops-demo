@@ -3,11 +3,15 @@ public with sharing class CandidateGradeController {
     }
     
     @AuraEnabled
-    public static CandidateGradeInfo getCandidateGrade(String contactId) { 
+    public static CandidateGradeInfo getCandidateGrade(String contactId, Id contactIdLoop) { 
         
         // Build the query
         String selectQueryString = 'SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = \'' + contactId + '\'';
         Contact currentContact = Database.query(selectQueryString);
+        
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloop = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactIdLoop];
+        }
 
         User currentUser = [SELECT Seniority__c FROM User where Id = :UserInfo.getUserId()];
         String temperature = '';
