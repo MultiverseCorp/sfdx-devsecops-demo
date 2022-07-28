@@ -24,7 +24,7 @@ public with sharing class LookupController2 {
         }
 
         String queryString = selectClause + fromClause + whereClause + orderClause;
-        List<SObject> sObjectList = Database.query(queryString);
+//         List<SObject> sObjectList = Database.query(queryString);
         return sObjectList;
     }
 
