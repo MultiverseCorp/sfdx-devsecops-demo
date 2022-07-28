@@ -24,7 +24,9 @@ public with sharing class LookupController2 {
         }
 
         String queryString = selectClause + fromClause + whereClause + orderClause;
-//         List<SObject> sObjectList = Database.query(queryString);
+        // Adding comments just to make a new commit
+        List<SObject> sObjectList = Database.query(queryString);
+        
         return sObjectList;
     }
 
