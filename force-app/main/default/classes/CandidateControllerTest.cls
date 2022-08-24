@@ -1,5 +1,4 @@
 @IsTest
-
 public with sharing class CandidateControllerTest {
    
     @IsTest
@@ -7,6 +6,5 @@ public with sharing class CandidateControllerTest {
         String s = "some value";
         // my custom test logic here...
         
-        System.assert(!String.isEmpty(s), "Test message");
     }
 }
