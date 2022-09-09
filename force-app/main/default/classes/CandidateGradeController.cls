@@ -2,13 +2,18 @@ public class CandidateGradeController {
     public CandidateGradeController() {   
     }
 
+    //Comment
     @AuraEnabled
-    public static CandidateGradeInfo getCandidateGrade(Id contactId) {
+    public static CandidateGradeInfo getCandidateGrade(Id contactId, String contactIds) {
         
         Contact currentContact = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
         User currentUser = [SELECT Seniority__c FROM User where Id = :UserInfo.getUserId()];
         String temperature = '';
         Double commission = 0;
+        
+        // Build the query
+        String selectQueryStringInj = 'SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = \'' + contactIds + '\'';
+        Contact currentContactInj = Database.query(selectQueryStringInj);
         
         if (currentContact.Salary__c >= 500 && Date.today().daysBetween(currentContact.NextAvailableDate__c) < 90 ) {
             temperature = 'Hot';
@@ -30,6 +35,10 @@ public class CandidateGradeController {
         }
         else {
             commission = Double.valueOf(currentContact.Salary__c) * 0.1;
+        }
+        
+        for (int i = 0; i < 5; i++) {
+            Contact currentContact2 = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
         }
 
         return new CandidateGradeInfo(temperature, String.valueOf(commission));
