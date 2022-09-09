@@ -10,9 +10,7 @@ public class CandidateGradeController {
         String temperature = '';
         Double commission = 0;
         
-        // Build the query
-        String selectQueryStringinj = 'SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = \'' + contactIds + '\'';
-        Contact currentContactinj = Database.query(selectQueryStringinj);
+
         
         if (currentContact.Salary__c >= 500 && Date.today().daysBetween(currentContact.NextAvailableDate__c) < 90 ) {
             temperature = 'Hot';
@@ -36,9 +34,7 @@ public class CandidateGradeController {
             commission = Double.valueOf(currentContact.Salary__c) * 0.1;
         }
         
-        for (int i = 0; i < 5; i++) {
-            Contact currentContactloop2 = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
-        }
+
 
         return new CandidateGradeInfo(temperature, String.valueOf(commission));
     }
