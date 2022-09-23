@@ -3,7 +3,7 @@ public with sharing class CandidateGradeController {
     }
     
     @AuraEnabled
-    public static CandidateGradeInfo getCandidateGrade(String contactId) { 
+    public static CandidateGradeInfo getCandidateGrade(String contactId, Id contactId2) { 
         
         // Build the query
         String selectQueryString = 'SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = \'' + contactId + '\'';
@@ -22,6 +22,10 @@ public with sharing class CandidateGradeController {
         }
         else {
             temperature = 'Cold';
+        }
+        
+        for (int i = 0; i < 5; i++) {
+            Contact lastContact = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId2];
         }
 
         Map<String, Double> seniorityCommissionMap = new Map<String, Double>();
