@@ -17,7 +17,7 @@ public class CandidateGradeController {
             temperature = 'Medium';
         }
         else {
-            temperature = 'Cold';
+            temperature = 'Too Cold';
         }
 
         Map<String, Double> seniorityCommissionMap = new Map<String, Double>();
