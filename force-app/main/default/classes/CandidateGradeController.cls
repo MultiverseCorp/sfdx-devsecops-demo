@@ -2,7 +2,7 @@ public class CandidateGradeController {
     public CandidateGradeController() {   
     }
 
-    // comment 02
+    // comment 02asdasd
     @AuraEnabled
     public static CandidateGradeInfo getCandidateGrade(Id contactId) {
         
