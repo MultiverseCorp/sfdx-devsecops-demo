@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <assignments>
+        <description>This Assignment is used to set ErrorOccured for the fault path.</description>
+        <name>Set_ErrorOccured</name>
+        <label>Set ErrorOccured</label>
+        <locationX>891</locationX>
+        <locationY>1035</locationY>
+        <assignmentItems>
+            <assignToReference>ErrorOccured</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <description>This Decision is used to check the criteria for Stop Execution</description>
+        <name>Check_Criteria_For_StopExecution</name>
+        <label>Check Criteria For StopExecution</label>
+        <locationX>883</locationX>
+        <locationY>605</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Doesnt_Stop_The_Execution</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Setup.Stop_Execution__c.Disable_Flows__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Setup.Stop_Execution__c.Account__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Fields_on_Account</targetReference>
+            </connector>
+            <label>Doesnt Stop The Execution</label>
+        </rules>
+    </decisions>
+    <description>This RT flow is used to update the Account.SubStatusDetail-ITEBIZSYS-161236, ITEBIZSYS-167615</description>
+    <environments>Default</environments>
+    <interviewLabel>Account-Before-Upsert-UpdateSubStatusDetail-RecordTriggered {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Account-Before-Upsert-UpdateSubStatusDetail-RecordTriggered</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>This element is used to update Account Sub-Status, Sub-Status Detail and Unqualified Sub-Reason</description>
+        <name>Update_Fields_on_Account</name>
+        <label>Update Fields on Account</label>
+        <locationX>890</locationX>
+        <locationY>809</locationY>
+        <faultConnector>
+            <targetReference>Set_ErrorOccured</targetReference>
+        </faultConnector>
+        <inputAssignments>
+            <field>Account_Sub_Status__c</field>
+            <value>
+                <stringValue>Unqualified</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Sub_Status_Detail__c</field>
+            <value>
+                <stringValue>Out of Geofence</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Unqualified_Sub_Reason__c</field>
+            <value>
+                <stringValue>Not in a serviceable area</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>769</locationX>
+        <locationY>223</locationY>
+        <connector>
+            <targetReference>Check_Criteria_For_StopExecution</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>(1 OR 2) AND 3 AND 4 AND 5 AND (6 OR 7 OR 8 OR 9 OR 10)</filterLogic>
+        <filters>
+            <field>Sellable__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Serviceable__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>RE_Business_Category__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Restaurant &amp; Takeout</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Lead_Source__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Outbound</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Reviewed_by_BPO__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Reviewed</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Service_Country__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>United Kingdom</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Service_Country__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>France</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Service_Country__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Japan</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Service_Country__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>United States</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Service_Country__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Canada</stringValue>
+            </value>
+        </filters>
+        <object>Account</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>ErrorOccured</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>
