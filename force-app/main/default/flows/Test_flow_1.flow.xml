@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>test flow 1 description here.</description>
+    <formulas>
+        <name>test_formula</name>
+        <dataType>String</dataType>
+        <expression>&apos;008efSfffA7655FDEg&apos;</expression>
+    </formulas>
+    <formulas>
+        <name>UserSessionID</name>
+        <dataType>String</dataType>
+        <expression>{!$Api.Session_ID}</expression>
+    </formulas>
+    <interviewLabel>Test flow 1 {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Test flow 1</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <screens>
+        <name>Test_screen_1</name>
+        <label>Test screen 1</label>
+        <locationX>176</locationX>
+        <locationY>158</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Test_screen_2</targetReference>
+        </connector>
+        <fields>
+            <name>Test_screen_checkbox_1</name>
+            <dataType>Boolean</dataType>
+            <fieldText>Test screen checkbox 1</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Test_screen_2</name>
+        <label>Test screen 2</label>
+        <locationX>176</locationX>
+        <locationY>278</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>Test_screen_textarea_2</name>
+            <fieldText>Test screen textarea 2</fieldText>
+            <fieldType>LargeTextArea</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <startElementReference>Test_screen_1</startElementReference>
+</Flow>

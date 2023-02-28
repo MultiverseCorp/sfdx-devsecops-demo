@@ -1,6 +1,8 @@
-public class CandidateGradeController {
+public inherited sharing class CandidateGradeController {
     public CandidateGradeController() {   
     }
+
+
 
     // comment
     @AuraEnabled
