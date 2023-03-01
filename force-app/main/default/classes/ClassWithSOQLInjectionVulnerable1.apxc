@@ -3,7 +3,7 @@ public without sharing class ClassWithSOQLInjectionVulnerable1 {
      public void vulnerable1(){
              String malicious = ApexPages.currentPage().getParameters().get('MALICIOUS_SOQL_CODE');
              String q = 'SELECT id,AccountId FROM Contact WHERE Id = ' + malicious + ' LIMIT 1';
-             queryResult = Database.query(q);
+             List<Contact> queryResult = Database.query(q);
       }
 
  }
