@@ -1,4 +1,4 @@
-//This class is calculating the grade for every candidate neW
+@JsonAccess(serializable='samePackage' deserializable=’sameNamespace’)
 public inherited sharing class CandidateGradeController3 {
     public CandidateGradeController3() {   
     }
