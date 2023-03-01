@@ -1,5 +1,6 @@
 @RestResource(urlMapping='/accounts/*')
-global with sharing class MyRestControllerPositive {
+global class MyRestControllerPositive {
+    
     @HttpGet
     global static void getAccounts() {
         RestResponse res = RestContext.response;
@@ -8,6 +9,7 @@ global with sharing class MyRestControllerPositive {
             res.responseBody = Blob.valueOf(JSON.serialize(accounts));
             res.statusCode = 200;
             res.addHeader('not-valid-rfc-header/name', 'a value');
+    
         } catch (Exception e) {
             res.responseBody = Blob.valueOf(e.getMessage());
             res.statusCode = 500;
