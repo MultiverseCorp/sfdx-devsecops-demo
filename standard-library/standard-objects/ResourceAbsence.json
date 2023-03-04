@@ -1,0 +1,6571 @@
+{
+  "actionOverrides": [],
+  "activateable": false,
+  "associateEntityType": null,
+  "associateParentEntity": null,
+  "childRelationships": [
+    {
+      "cascadeDelete": true,
+      "childSObject": "AIInsightValue",
+      "deprecatedAndHidden": false,
+      "field": "SobjectLookupValueId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "AIRecordInsight",
+      "deprecatedAndHidden": false,
+      "field": "TargetId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "ActivityHistory",
+      "deprecatedAndHidden": false,
+      "field": "WhatId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ActivityHistories",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "AppointmentScheduleLog",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AssessmentTaskContentDocument",
+      "deprecatedAndHidden": false,
+      "field": "ContentContextId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ContentDocumentContext",
+      "restrictedDelete": true
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "AttachedContentDocument",
+      "deprecatedAndHidden": false,
+      "field": "LinkedEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "AttachedContentDocuments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "CombinedAttachment",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "CombinedAttachments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "ContentDocumentLink",
+      "deprecatedAndHidden": false,
+      "field": "LinkedEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ContentDocumentLinks",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ContentDocumentLinkChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "LinkedEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ContentVersion",
+      "deprecatedAndHidden": false,
+      "field": "FirstPublishLocationId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ContentVersionChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "FirstPublishLocationId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "EmailMessage",
+      "deprecatedAndHidden": false,
+      "field": "RelatedToId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Emails",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "EmailMessageChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "RelatedToId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "EntitySubscription",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "FeedSubscriptionsForEntity",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "Event",
+      "deprecatedAndHidden": false,
+      "field": "WhatId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Events",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "EventChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "WhatId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "EventRelation",
+      "deprecatedAndHidden": false,
+      "field": "RelationId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "EventRelations",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "EventRelationChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "RelationId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FeedComment",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "FeedItem",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowExecutionErrorEvent",
+      "deprecatedAndHidden": false,
+      "field": "ContextRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowOrchestrationWorkItem",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowRecordRelation",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "GenericAsmtTaskContext",
+      "deprecatedAndHidden": false,
+      "field": "ContextId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "GenericVisitTaskContext",
+      "deprecatedAndHidden": false,
+      "field": "ContextId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "GVTaskContexts",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "NetworkActivityAudit",
+      "deprecatedAndHidden": false,
+      "field": "ParentEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ParentEntities",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "NetworkFeedResponseMetric",
+      "deprecatedAndHidden": false,
+      "field": "ParentRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "OpenActivity",
+      "deprecatedAndHidden": false,
+      "field": "WhatId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "OpenActivities",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "OutgoingEmail",
+      "deprecatedAndHidden": false,
+      "field": "RelatedToId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "ProcessInstance",
+      "deprecatedAndHidden": false,
+      "field": "TargetObjectId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ProcessInstances",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ProcessInstanceHistory",
+      "deprecatedAndHidden": false,
+      "field": "TargetObjectId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ProcessSteps",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "RecordAction",
+      "deprecatedAndHidden": false,
+      "field": "RecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "RecordActions",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "RecordActionHistory",
+      "deprecatedAndHidden": false,
+      "field": "ParentRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "RecordActionHistories",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "ResourceAbsenceFeed",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Feeds",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "ResourceAbsenceHistory",
+      "deprecatedAndHidden": false,
+      "field": "ResourceAbsenceId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Histories",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "Task",
+      "deprecatedAndHidden": false,
+      "field": "WhatId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Tasks",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "TaskChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "WhatId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "TaskRelation",
+      "deprecatedAndHidden": false,
+      "field": "RelationId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "TaskRelations",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "TaskRelationChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "RelationId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "TopicAssignment",
+      "deprecatedAndHidden": false,
+      "field": "EntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "TopicAssignments",
+      "restrictedDelete": false
+    }
+  ],
+  "compactLayoutable": true,
+  "createable": true,
+  "custom": false,
+  "customSetting": false,
+  "deepCloneable": false,
+  "defaultImplementation": null,
+  "deletable": true,
+  "deprecatedAndHidden": false,
+  "extendedBy": null,
+  "extendsInterfaces": null,
+  "feedEnabled": false,
+  "fields": [
+    {
+      "aggregatable": true,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 18,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": null,
+      "controllerName": null,
+      "createable": false,
+      "custom": false,
+      "defaultValue": null,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": true,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": true,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": true,
+      "inlineHelpText": null,
+      "label": "ID assenza",
+      "length": 18,
+      "mask": null,
+      "maskType": null,
+      "name": "Id",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": false,
+      "permissionable": false,
+      "picklistValues": [],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [],
+      "relationshipName": null,
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": false,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "tns:ID",
+      "sortable": true,
+      "type": "id",
+      "unique": false,
+      "updateable": false,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": false,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 0,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": null,
+      "controllerName": null,
+      "createable": false,
+      "custom": false,
+      "defaultValue": false,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": true,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": true,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "Eliminato",
+      "length": 0,
+      "mask": null,
+      "maskType": null,
+      "name": "IsDeleted",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": false,
+      "permissionable": false,
+      "picklistValues": [],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [],
+      "relationshipName": null,
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": false,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "xsd:boolean",
+      "sortable": true,
+      "type": "boolean",
+      "unique": false,
+      "updateable": false,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": true,
+      "aiPredictionField": false,
+      "autoNumber": true,
+      "byteLength": 765,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": null,
+      "controllerName": null,
+      "createable": false,
+      "custom": false,
+      "defaultValue": null,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": true,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": false,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": true,
+      "inlineHelpText": null,
+      "label": "Numero assenza",
+      "length": 255,
+      "mask": null,
+      "maskType": null,
+      "name": "AbsenceNumber",
+      "nameField": true,
+      "namePointing": false,
+      "nillable": false,
+      "permissionable": false,
+      "picklistValues": [],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [],
+      "relationshipName": null,
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": false,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "xsd:string",
+      "sortable": true,
+      "type": "string",
+      "unique": false,
+      "updateable": false,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": true,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 9,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": null,
+      "controllerName": null,
+      "createable": true,
+      "custom": false,
+      "defaultValue": "EUR",
+      "defaultValueFormula": null,
+      "defaultedOnCreate": true,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": true,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "Codice ISO valuta",
+      "length": 3,
+      "mask": null,
+      "maskType": null,
+      "name": "CurrencyIsoCode",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": true,
+      "permissionable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Euro",
+          "validFor": null,
+          "value": "EUR"
+        }
+      ],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [],
+      "relationshipName": null,
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": true,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "xsd:string",
+      "sortable": true,
+      "type": "picklist",
+      "unique": false,
+      "updateable": true,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": true,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 0,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": null,
+      "controllerName": null,
+      "createable": false,
+      "custom": false,
+      "defaultValue": null,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": true,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": false,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "Data creazione",
+      "length": 0,
+      "mask": null,
+      "maskType": null,
+      "name": "CreatedDate",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": false,
+      "permissionable": false,
+      "picklistValues": [],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [],
+      "relationshipName": null,
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": false,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "xsd:dateTime",
+      "sortable": true,
+      "type": "datetime",
+      "unique": false,
+      "updateable": false,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": true,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 18,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": null,
+      "controllerName": null,
+      "createable": false,
+      "custom": false,
+      "defaultValue": null,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": true,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": true,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "Creato da ID",
+      "length": 18,
+      "mask": null,
+      "maskType": null,
+      "name": "CreatedById",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": false,
+      "permissionable": false,
+      "picklistValues": [],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": false,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "tns:ID",
+      "sortable": true,
+      "type": "reference",
+      "unique": false,
+      "updateable": false,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": true,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 0,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": null,
+      "controllerName": null,
+      "createable": false,
+      "custom": false,
+      "defaultValue": null,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": true,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": false,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "Data ultima modifica",
+      "length": 0,
+      "mask": null,
+      "maskType": null,
+      "name": "LastModifiedDate",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": false,
+      "permissionable": false,
+      "picklistValues": [],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [],
+      "relationshipName": null,
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": false,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "xsd:dateTime",
+      "sortable": true,
+      "type": "datetime",
+      "unique": false,
+      "updateable": false,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": true,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 18,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": null,
+      "controllerName": null,
+      "createable": false,
+      "custom": false,
+      "defaultValue": null,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": true,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": true,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "ID ultima modifica di",
+      "length": 18,
+      "mask": null,
+      "maskType": null,
+      "name": "LastModifiedById",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": false,
+      "permissionable": false,
+      "picklistValues": [],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": false,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "tns:ID",
+      "sortable": true,
+      "type": "reference",
+      "unique": false,
+      "updateable": false,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": true,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 0,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": null,
+      "controllerName": null,
+      "createable": false,
+      "custom": false,
+      "defaultValue": null,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": true,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": false,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "Modstamp di sistema",
+      "length": 0,
+      "mask": null,
+      "maskType": null,
+      "name": "SystemModstamp",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": false,
+      "permissionable": false,
+      "picklistValues": [],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [],
+      "relationshipName": null,
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": false,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "xsd:dateTime",
+      "sortable": true,
+      "type": "datetime",
+      "unique": false,
+      "updateable": false,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": true,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 0,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": null,
+      "controllerName": null,
+      "createable": false,
+      "custom": false,
+      "defaultValue": null,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": false,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": false,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "Data ultima visualizzazione",
+      "length": 0,
+      "mask": null,
+      "maskType": null,
+      "name": "LastViewedDate",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": true,
+      "permissionable": false,
+      "picklistValues": [],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [],
+      "relationshipName": null,
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": false,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "xsd:dateTime",
+      "sortable": true,
+      "type": "datetime",
+      "unique": false,
+      "updateable": false,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": true,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 0,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": null,
+      "controllerName": null,
+      "createable": false,
+      "custom": false,
+      "defaultValue": null,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": false,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": false,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "Data ultimo riferimento",
+      "length": 0,
+      "mask": null,
+      "maskType": null,
+      "name": "LastReferencedDate",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": true,
+      "permissionable": false,
+      "picklistValues": [],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [],
+      "relationshipName": null,
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": false,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "xsd:dateTime",
+      "sortable": true,
+      "type": "datetime",
+      "unique": false,
+      "updateable": false,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": true,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 18,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": null,
+      "controllerName": null,
+      "createable": true,
+      "custom": false,
+      "defaultValue": null,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": false,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": true,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "ID risorsa",
+      "length": 18,
+      "mask": null,
+      "maskType": null,
+      "name": "ResourceId",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": false,
+      "permissionable": false,
+      "picklistValues": [],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [
+        "ServiceResource"
+      ],
+      "relationshipName": "Resource",
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": false,
+      "scale": 0,
+      "searchPrefilterable": true,
+      "soapType": "tns:ID",
+      "sortable": true,
+      "type": "reference",
+      "unique": false,
+      "updateable": false,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": true,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 120,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": null,
+      "controllerName": null,
+      "createable": true,
+      "custom": false,
+      "defaultValue": "Vacanza",
+      "defaultValueFormula": null,
+      "defaultedOnCreate": true,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": true,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "Tipo",
+      "length": 40,
+      "mask": null,
+      "maskType": null,
+      "name": "Type",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": false,
+      "permissionable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Vacanza",
+          "validFor": null,
+          "value": "Vacanza"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Incontro",
+          "validFor": null,
+          "value": "Incontro"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Formazione",
+          "validFor": null,
+          "value": "Formazione"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Malattia",
+          "validFor": null,
+          "value": "Malattia"
+        }
+      ],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [],
+      "relationshipName": null,
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": false,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "xsd:string",
+      "sortable": true,
+      "type": "picklist",
+      "unique": false,
+      "updateable": true,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": false,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 96000,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": null,
+      "controllerName": null,
+      "createable": true,
+      "custom": false,
+      "defaultValue": null,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": false,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": false,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": false,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "Descrizione",
+      "length": 32000,
+      "mask": null,
+      "maskType": null,
+      "name": "Description",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": true,
+      "permissionable": true,
+      "picklistValues": [],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [],
+      "relationshipName": null,
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": false,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "xsd:string",
+      "sortable": false,
+      "type": "textarea",
+      "unique": false,
+      "updateable": true,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": true,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 0,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": null,
+      "controllerName": null,
+      "createable": true,
+      "custom": false,
+      "defaultValue": null,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": false,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": false,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "Orario di inizio",
+      "length": 0,
+      "mask": null,
+      "maskType": null,
+      "name": "Start",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": false,
+      "permissionable": false,
+      "picklistValues": [],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [],
+      "relationshipName": null,
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": false,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "xsd:dateTime",
+      "sortable": true,
+      "type": "datetime",
+      "unique": false,
+      "updateable": true,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": true,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 0,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": null,
+      "controllerName": null,
+      "createable": true,
+      "custom": false,
+      "defaultValue": null,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": false,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": false,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "Orario di fine",
+      "length": 0,
+      "mask": null,
+      "maskType": null,
+      "name": "End",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": false,
+      "permissionable": false,
+      "picklistValues": [],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [],
+      "relationshipName": null,
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": false,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "xsd:dateTime",
+      "sortable": true,
+      "type": "datetime",
+      "unique": false,
+      "updateable": true,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": true,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 765,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": "Address",
+      "controllerName": null,
+      "createable": true,
+      "custom": false,
+      "defaultValue": null,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": false,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": true,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "Indirizzo",
+      "length": 255,
+      "mask": null,
+      "maskType": null,
+      "name": "Street",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": true,
+      "permissionable": true,
+      "picklistValues": [],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [],
+      "relationshipName": null,
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": false,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "xsd:string",
+      "sortable": true,
+      "type": "textarea",
+      "unique": false,
+      "updateable": true,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": true,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 120,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": "Address",
+      "controllerName": null,
+      "createable": true,
+      "custom": false,
+      "defaultValue": null,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": false,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": true,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "Città",
+      "length": 40,
+      "mask": null,
+      "maskType": null,
+      "name": "City",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": true,
+      "permissionable": true,
+      "picklistValues": [],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [],
+      "relationshipName": null,
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": false,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "xsd:string",
+      "sortable": true,
+      "type": "string",
+      "unique": false,
+      "updateable": true,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": true,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 240,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": "Address",
+      "controllerName": null,
+      "createable": true,
+      "custom": false,
+      "defaultValue": null,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": false,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": true,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "Stato/Provincia",
+      "length": 80,
+      "mask": null,
+      "maskType": null,
+      "name": "State",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": true,
+      "permissionable": true,
+      "picklistValues": [],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [],
+      "relationshipName": null,
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": false,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "xsd:string",
+      "sortable": true,
+      "type": "string",
+      "unique": false,
+      "updateable": true,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": true,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 60,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": "Address",
+      "controllerName": null,
+      "createable": true,
+      "custom": false,
+      "defaultValue": null,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": false,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": true,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "CAP",
+      "length": 20,
+      "mask": null,
+      "maskType": null,
+      "name": "PostalCode",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": true,
+      "permissionable": true,
+      "picklistValues": [],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [],
+      "relationshipName": null,
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": false,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "xsd:string",
+      "sortable": true,
+      "type": "string",
+      "unique": false,
+      "updateable": true,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": true,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 240,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": "Address",
+      "controllerName": null,
+      "createable": true,
+      "custom": false,
+      "defaultValue": null,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": false,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": true,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "Paese",
+      "length": 80,
+      "mask": null,
+      "maskType": null,
+      "name": "Country",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": true,
+      "permissionable": true,
+      "picklistValues": [],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [],
+      "relationshipName": null,
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": false,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "xsd:string",
+      "sortable": true,
+      "type": "string",
+      "unique": false,
+      "updateable": true,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": true,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 30,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": "Address",
+      "controllerName": "CountryCode",
+      "createable": true,
+      "custom": false,
+      "defaultValue": null,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": false,
+      "dependentPicklist": true,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": true,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "Codice Stato/Provincia",
+      "length": 10,
+      "mask": null,
+      "maskType": null,
+      "name": "StateCode",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": true,
+      "permissionable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Acre",
+          "validFor": "AAAABAAA",
+          "value": "AC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Agrigento",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "AG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Aguascalientes",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAQ",
+          "value": "AG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Aichi",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "05"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Akita",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "02"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Alabama",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "AL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Alagoas",
+          "validFor": "AAAABAAA",
+          "value": "AL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Alaska",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "AK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Alberta",
+          "validFor": "AAAAABAA",
+          "value": "AB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Alessandria",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "AL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Amapá",
+          "validFor": "AAAABAAA",
+          "value": "AP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Amazonas",
+          "validFor": "AAAABAAA",
+          "value": "AM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ancona",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "AN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Andhra Pradesh",
+          "validFor": "AAAAAAAAAAAAAABA",
+          "value": "AP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anhui",
+          "validFor": "AAAAAAEA",
+          "value": "34"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Aomori",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "23"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Aosta",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "AO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arezzo",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "AR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arizona",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "AZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arkansas",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "AR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arunachal Pradesh",
+          "validFor": "AAAAAAAAAAAAAABA",
+          "value": "AR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ascoli Piceno",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "AP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Assam",
+          "validFor": "AAAAAAAAAAAAAABA",
+          "value": "AS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asti",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "AT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Australian Capital Territory",
+          "validFor": "AAgA",
+          "value": "ACT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Avellino",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "AV"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bahia",
+          "validFor": "AAAABAAA",
+          "value": "BA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Baja California",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAQ",
+          "value": "BC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Baja California Sur",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAQ",
+          "value": "BS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bari",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "BA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Barletta-Andria-Trani",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "BT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Belluno",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "BL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Benevento",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "BN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bergamo",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "BG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Biella",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "BI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bihar",
+          "validFor": "AAAAAAAAAAAAAABA",
+          "value": "BR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bologna",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "BO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bolzano",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "BZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Brescia",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "BS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Brindisi",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "BR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "British Columbia",
+          "validFor": "AAAAABAA",
+          "value": "BC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cagliari",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "CA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "California",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "CA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Caltanissetta",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "CL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Campeche",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAQ",
+          "value": "CM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Campobasso",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "CB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Carbonia-Iglesias",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "CI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Carlow",
+          "validFor": "AAAAAAAAAAAAAAAE",
+          "value": "CW"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Caserta",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "CE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Catania",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "CT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Catanzaro",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "CZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cavan",
+          "validFor": "AAAAAAAAAAAAAAAE",
+          "value": "CN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ceará",
+          "validFor": "AAAABAAA",
+          "value": "CE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chandigarh",
+          "validFor": "AAAAAAAAAAAAAABA",
+          "value": "CH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chhattisgarh",
+          "validFor": "AAAAAAAAAAAAAABA",
+          "value": "CT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chiapas",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAQ",
+          "value": "CS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chiba",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "12"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chieti",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "CH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chihuahua",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAQ",
+          "value": "CH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chongqing",
+          "validFor": "AAAAAAEA",
+          "value": "50"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Clare",
+          "validFor": "AAAAAAAAAAAAAAAE",
+          "value": "CE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Coahuila",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAQ",
+          "value": "CO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Colima",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAQ",
+          "value": "CL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Colorado",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "CO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Como",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "CO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Connecticut",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "CT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cork",
+          "validFor": "AAAAAAAAAAAAAAAE",
+          "value": "CO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cosenza",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "CS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cremona",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "CR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Crotone",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "KR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cuneo",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "CN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dadra e Nagar Haveli",
+          "validFor": "AAAAAAAAAAAAAABA",
+          "value": "DN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Daman e Diu",
+          "validFor": "AAAAAAAAAAAAAABA",
+          "value": "DD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Delaware",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "DE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Delhi",
+          "validFor": "AAAAAAAAAAAAAABA",
+          "value": "DL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Distretto Federale",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAQ",
+          "value": "DF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "District of Columbia",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "DC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Distrito Federal",
+          "validFor": "AAAABAAA",
+          "value": "DF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Donegal",
+          "validFor": "AAAAAAAAAAAAAAAE",
+          "value": "DL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dublin",
+          "validFor": "AAAAAAAAAAAAAAAE",
+          "value": "D"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Durango",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAQ",
+          "value": "DG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ehime",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "38"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Enna",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "EN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espírito Santo",
+          "validFor": "AAAABAAA",
+          "value": "ES"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fermo",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "FM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ferrara",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "FE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Firenze",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "FI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Florida",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "FL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Foggia",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "FG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Forlì-Cesena",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "FC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Frosinone",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "FR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fujian",
+          "validFor": "AAAAAAEA",
+          "value": "35"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fukui",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "18"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fukuoka",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "40"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fukushima",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "07"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Galway",
+          "validFor": "AAAAAAAAAAAAAAAE",
+          "value": "G"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gansu",
+          "validFor": "AAAAAAEA",
+          "value": "62"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Genova",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "GE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Georgia",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "GA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gifu",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "21"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Goa",
+          "validFor": "AAAAAAAAAAAAAABA",
+          "value": "GA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Goiás",
+          "validFor": "AAAABAAA",
+          "value": "GO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gorizia",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "GO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Grosseto",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "GR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guanajuato",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAQ",
+          "value": "GT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guangdong",
+          "validFor": "AAAAAAEA",
+          "value": "44"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guangxi",
+          "validFor": "AAAAAAEA",
+          "value": "45"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guerrero",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAQ",
+          "value": "GR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guizhou",
+          "validFor": "AAAAAAEA",
+          "value": "52"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gujarat",
+          "validFor": "AAAAAAAAAAAAAABA",
+          "value": "GJ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gunma",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "10"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Hainan",
+          "validFor": "AAAAAAEA",
+          "value": "46"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Haryana",
+          "validFor": "AAAAAAAAAAAAAABA",
+          "value": "HR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Hawaii",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "HI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Hebei",
+          "validFor": "AAAAAAEA",
+          "value": "13"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Heilongjiang",
+          "validFor": "AAAAAAEA",
+          "value": "23"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Henan",
+          "validFor": "AAAAAAEA",
+          "value": "41"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Hidalgo",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAQ",
+          "value": "HG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Himachal Pradesh",
+          "validFor": "AAAAAAAAAAAAAABA",
+          "value": "HP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Hiroshima",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "34"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Hokkaido",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "01"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Hong Kong",
+          "validFor": "AAAAAAEA",
+          "value": "91"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Hubei",
+          "validFor": "AAAAAAEA",
+          "value": "42"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Hunan",
+          "validFor": "AAAAAAEA",
+          "value": "43"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Hyogo",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "28"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ibaraki",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "08"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Idaho",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "ID"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Illinois",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "IL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Imperia",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "IM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Indiana",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "IN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Iowa",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "IA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Isernia",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "IS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ishikawa",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "17"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Isole Andaman e Nicobar",
+          "validFor": "AAAAAAAAAAAAAABA",
+          "value": "AN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Iwate",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "03"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Jalisco",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAQ",
+          "value": "JA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Jammu e Kashmir",
+          "validFor": "AAAAAAAAAAAAAABA",
+          "value": "JK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Jharkhand",
+          "validFor": "AAAAAAAAAAAAAABA",
+          "value": "JH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Jiangsu",
+          "validFor": "AAAAAAEA",
+          "value": "32"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Jiangxi",
+          "validFor": "AAAAAAEA",
+          "value": "36"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Jilin",
+          "validFor": "AAAAAAEA",
+          "value": "22"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Kagawa",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "37"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Kagoshima",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "46"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Kanagawa",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "14"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Kansas",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "KS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Karnataka",
+          "validFor": "AAAAAAAAAAAAAABA",
+          "value": "KA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Kentucky",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "KY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Kerala",
+          "validFor": "AAAAAAAAAAAAAABA",
+          "value": "KL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Kerry",
+          "validFor": "AAAAAAAAAAAAAAAE",
+          "value": "KY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Kildare",
+          "validFor": "AAAAAAAAAAAAAAAE",
+          "value": "KE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Kilkenny",
+          "validFor": "AAAAAAAAAAAAAAAE",
+          "value": "KK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Kochi",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "39"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Kumamoto",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "43"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Kyoto",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "26"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "L'Aquila",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "AQ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lakshadweep",
+          "validFor": "AAAAAAAAAAAAAABA",
+          "value": "LD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Laois",
+          "validFor": "AAAAAAAAAAAAAAAE",
+          "value": "LS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "La Spezia",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "SP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Latina",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "LT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lecce",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "LE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lecco",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "LC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Leitrim",
+          "validFor": "AAAAAAAAAAAAAAAE",
+          "value": "LM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Liaoning",
+          "validFor": "AAAAAAEA",
+          "value": "21"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Limerick",
+          "validFor": "AAAAAAAAAAAAAAAE",
+          "value": "LK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Livorno",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "LI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lodi",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "LO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Longford",
+          "validFor": "AAAAAAAAAAAAAAAE",
+          "value": "LD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Louisiana",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "LA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Louth",
+          "validFor": "AAAAAAAAAAAAAAAE",
+          "value": "LH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lucca",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "LU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Macao",
+          "validFor": "AAAAAAEA",
+          "value": "92"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Macerata",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "MC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Madhya Pradesh",
+          "validFor": "AAAAAAAAAAAAAABA",
+          "value": "MP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Maharashtra",
+          "validFor": "AAAAAAAAAAAAAABA",
+          "value": "MH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Maine",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "ME"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Manipur",
+          "validFor": "AAAAAAAAAAAAAABA",
+          "value": "MN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Manitoba",
+          "validFor": "AAAAABAA",
+          "value": "MB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mantova",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "MN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Maranhão",
+          "validFor": "AAAABAAA",
+          "value": "MA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Maryland",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "MD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Massachusetts",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "MA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Massa e Carrara",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "MS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Matera",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "MT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mato Grosso",
+          "validFor": "AAAABAAA",
+          "value": "MT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mato Grosso do Sul",
+          "validFor": "AAAABAAA",
+          "value": "MS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mayo",
+          "validFor": "AAAAAAAAAAAAAAAE",
+          "value": "MO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Meath",
+          "validFor": "AAAAAAAAAAAAAAAE",
+          "value": "MH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Medio Campidano",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "VS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Meghalaya",
+          "validFor": "AAAAAAAAAAAAAABA",
+          "value": "ML"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Messina",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "ME"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Michigan",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "MI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Michoacán",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAQ",
+          "value": "MI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mie",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "24"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Milano",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "MI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Minas Gerais",
+          "validFor": "AAAABAAA",
+          "value": "MG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Minnesota",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "MN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mississippi",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "MS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Missouri",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "MO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Miyagi",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "04"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Miyazaki",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "45"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mizoram",
+          "validFor": "AAAAAAAAAAAAAABA",
+          "value": "MZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Modena",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "MO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Monaghan",
+          "validFor": "AAAAAAAAAAAAAAAE",
+          "value": "MN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Montana",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "MT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Monza e Brianza",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "MB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Morelos",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAQ",
+          "value": "MO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nagaland",
+          "validFor": "AAAAAAAAAAAAAABA",
+          "value": "NL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nagano",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "20"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nagasaki",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "42"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Napoli",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "NA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nara",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "29"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nayarit",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAQ",
+          "value": "NA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nebraska",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "NE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nei Mongol",
+          "validFor": "AAAAAAEA",
+          "value": "15"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nevada",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "NV"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "New Brunswick",
+          "validFor": "AAAAABAA",
+          "value": "NB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Newfoundland e Labrador",
+          "validFor": "AAAAABAA",
+          "value": "NL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "New Hampshire",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "NH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "New Jersey",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "NJ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "New Mexico",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "NM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "New South Wales",
+          "validFor": "AAgA",
+          "value": "NSW"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "New York",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "NY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Niigata",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "15"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ningxia",
+          "validFor": "AAAAAAEA",
+          "value": "64"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "North Carolina",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "NC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "North Dakota",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "ND"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Northern Territory",
+          "validFor": "AAgA",
+          "value": "NT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Northwest Territories",
+          "validFor": "AAAAABAA",
+          "value": "NT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Novara",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "NO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nova Scotia",
+          "validFor": "AAAAABAA",
+          "value": "NS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nuevo León",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAQ",
+          "value": "NL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nunavut",
+          "validFor": "AAAAABAA",
+          "value": "NU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nuoro",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "NU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Oaxaca",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAQ",
+          "value": "OA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Odisha",
+          "validFor": "AAAAAAAAAAAAAABA",
+          "value": "OR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Offaly",
+          "validFor": "AAAAAAAAAAAAAAAE",
+          "value": "OY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ogliastra",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "OG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ohio",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "OH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Oita",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "44"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Okayama",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "33"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Okinawa",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "47"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Oklahoma",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "OK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Olbia-Tempio",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "OT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ontario",
+          "validFor": "AAAAABAA",
+          "value": "ON"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Oregon",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "OR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Oristano",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "OR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Osaka",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "27"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Padova",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "PD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Palermo",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "PA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pará",
+          "validFor": "AAAABAAA",
+          "value": "PA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Paraíba",
+          "validFor": "AAAABAAA",
+          "value": "PB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Paraná",
+          "validFor": "AAAABAAA",
+          "value": "PR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Parma",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "PR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pavia",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "PV"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pechino",
+          "validFor": "AAAAAAEA",
+          "value": "11"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pennsylvania",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "PA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pernambuco",
+          "validFor": "AAAABAAA",
+          "value": "PE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Perugia",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "PG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pesaro e Urbino",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "PU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pescara",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "PE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Piacenza",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "PC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Piauí",
+          "validFor": "AAAABAAA",
+          "value": "PI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pisa",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "PI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pistoia",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "PT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pordenone",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "PN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Potenza",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "PZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Prato",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "PO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Prince Edward Island",
+          "validFor": "AAAAABAA",
+          "value": "PE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Puducherry",
+          "validFor": "AAAAAAAAAAAAAABA",
+          "value": "PY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Puebla",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAQ",
+          "value": "PB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Punjab",
+          "validFor": "AAAAAAAAAAAAAABA",
+          "value": "PB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Qinghai",
+          "validFor": "AAAAAAEA",
+          "value": "63"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Quebec",
+          "validFor": "AAAAABAA",
+          "value": "QC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Queensland",
+          "validFor": "AAgA",
+          "value": "QLD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Querétaro",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAQ",
+          "value": "QE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Quintana Roo",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAQ",
+          "value": "QR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ragusa",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "RG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rajasthan",
+          "validFor": "AAAAAAAAAAAAAABA",
+          "value": "RJ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ravenna",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "RA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Reggio Calabria",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "RC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Reggio Emilia",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "RE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rhode Island",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "RI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rieti",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "RI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rimini",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "RN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rio de Janeiro",
+          "validFor": "AAAABAAA",
+          "value": "RJ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rio Grande do Norte",
+          "validFor": "AAAABAAA",
+          "value": "RN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rio Grande do Sul",
+          "validFor": "AAAABAAA",
+          "value": "RS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Roma",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "RM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rondônia",
+          "validFor": "AAAABAAA",
+          "value": "RO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Roraima",
+          "validFor": "AAAABAAA",
+          "value": "RR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Roscommon",
+          "validFor": "AAAAAAAAAAAAAAAE",
+          "value": "RN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rovigo",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "RO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Saga",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "41"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Saitama",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "11"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Salerno",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "SA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "San Luis Potosí",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAQ",
+          "value": "SL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Santa Catarina",
+          "validFor": "AAAABAAA",
+          "value": "SC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "São Paulo",
+          "validFor": "AAAABAAA",
+          "value": "SP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Saskatchewan",
+          "validFor": "AAAAABAA",
+          "value": "SK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sassari",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "SS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Savona",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "SV"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sergipe",
+          "validFor": "AAAABAAA",
+          "value": "SE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Shaanxi",
+          "validFor": "AAAAAAEA",
+          "value": "61"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Shandong",
+          "validFor": "AAAAAAEA",
+          "value": "37"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Shanghai",
+          "validFor": "AAAAAAEA",
+          "value": "31"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Shanxi",
+          "validFor": "AAAAAAEA",
+          "value": "14"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Shiga",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "25"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Shimane",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "32"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Shizuoka",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "22"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sichuan",
+          "validFor": "AAAAAAEA",
+          "value": "51"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Siena",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "SI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sikkim",
+          "validFor": "AAAAAAAAAAAAAABA",
+          "value": "SK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sinaloa",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAQ",
+          "value": "SI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Siracusa",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "SR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sligo",
+          "validFor": "AAAAAAAAAAAAAAAE",
+          "value": "SO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sondrio",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "SO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sonora",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAQ",
+          "value": "SO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "South Australia",
+          "validFor": "AAgA",
+          "value": "SA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "South Carolina",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "SC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "South Dakota",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "SD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Stato del Messico",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAQ",
+          "value": "ME"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tabasco",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAQ",
+          "value": "TB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Taiwan",
+          "validFor": "AAAAAAEA",
+          "value": "71"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tamaulipas",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAQ",
+          "value": "TM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tamil Nadu",
+          "validFor": "AAAAAAAAAAAAAABA",
+          "value": "TN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Taranto",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "TA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tasmania",
+          "validFor": "AAgA",
+          "value": "TAS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Telangana",
+          "validFor": "AAAAAAAAAAAAAABA",
+          "value": "TG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tennessee",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "TN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Teramo",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "TE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Terni",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "TR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Texas",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "TX"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tianjin",
+          "validFor": "AAAAAAEA",
+          "value": "12"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tipperary",
+          "validFor": "AAAAAAAAAAAAAAAE",
+          "value": "TA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tlaxcala",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAQ",
+          "value": "TL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tocantins",
+          "validFor": "AAAABAAA",
+          "value": "TO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tochigi",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "09"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tokushima",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "36"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tokyo",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "13"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Torino",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "TO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tottori",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "31"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Toyama",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "16"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Trapani",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "TP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Trento",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "TN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Treviso",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "TV"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Trieste",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "TS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tripura",
+          "validFor": "AAAAAAAAAAAAAABA",
+          "value": "TR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Udine",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "UD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Utah",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "UT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Uttarakhand",
+          "validFor": "AAAAAAAAAAAAAABA",
+          "value": "UT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Uttar Pradesh",
+          "validFor": "AAAAAAAAAAAAAABA",
+          "value": "UP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Varese",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "VA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Venezia",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "VE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Veracruz",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAQ",
+          "value": "VE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Verbano-Cusio-Ossola",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "VB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vercelli",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "VC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vermont",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "VT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Verona",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "VR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vibo Valentia",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "VV"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vicenza",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "VI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Victoria",
+          "validFor": "AAgA",
+          "value": "VIC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Virginia",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "VA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Viterbo",
+          "validFor": "AAAAAAAAAAAAAAAAAAEA",
+          "value": "VT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Wakayama",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "30"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Washington",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "WA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Waterford",
+          "validFor": "AAAAAAAAAAAAAAAE",
+          "value": "WD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "West Bengal",
+          "validFor": "AAAAAAAAAAAAAABA",
+          "value": "WB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Western Australia",
+          "validFor": "AAgA",
+          "value": "WA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Westmeath",
+          "validFor": "AAAAAAAAAAAAAAAE",
+          "value": "WH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "West Virginia",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "WV"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Wexford",
+          "validFor": "AAAAAAAAAAAAAAAE",
+          "value": "WX"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Wicklow",
+          "validFor": "AAAAAAAAAAAAAAAE",
+          "value": "WW"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Wisconsin",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "WI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Wyoming",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA",
+          "value": "WY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Xinjiang",
+          "validFor": "AAAAAAEA",
+          "value": "65"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Xizang",
+          "validFor": "AAAAAAEA",
+          "value": "54"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Yamagata",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "06"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Yamaguchi",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "35"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Yamanashi",
+          "validFor": "AAAAAAAAAAAAgAAA",
+          "value": "19"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Yucatán",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAQ",
+          "value": "YU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Yukon Territories",
+          "validFor": "AAAAABAA",
+          "value": "YT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Yunnan",
+          "validFor": "AAAAAAEA",
+          "value": "53"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Zacatecas",
+          "validFor": "AAAAAAAAAAAAAAAAAAAAAAAQ",
+          "value": "ZA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Zhejiang",
+          "validFor": "AAAAAAEA",
+          "value": "33"
+        }
+      ],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [],
+      "relationshipName": null,
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": true,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "xsd:string",
+      "sortable": true,
+      "type": "picklist",
+      "unique": false,
+      "updateable": true,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": true,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 30,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": "Address",
+      "controllerName": null,
+      "createable": true,
+      "custom": false,
+      "defaultValue": null,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": false,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": true,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "Codice paese",
+      "length": 10,
+      "mask": null,
+      "maskType": null,
+      "name": "CountryCode",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": true,
+      "permissionable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Afghanistan",
+          "validFor": null,
+          "value": "AF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Albania",
+          "validFor": null,
+          "value": "AL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Algeria",
+          "validFor": null,
+          "value": "DZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Andorra",
+          "validFor": null,
+          "value": "AD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Angola",
+          "validFor": null,
+          "value": "AO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anguilla",
+          "validFor": null,
+          "value": "AI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Antartide",
+          "validFor": null,
+          "value": "AQ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Antigua e Barbuda",
+          "validFor": null,
+          "value": "AG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arabia Saudita",
+          "validFor": null,
+          "value": "SA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Argentina",
+          "validFor": null,
+          "value": "AR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Armenia",
+          "validFor": null,
+          "value": "AM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Aruba",
+          "validFor": null,
+          "value": "AW"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Australia",
+          "validFor": null,
+          "value": "AU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Austria",
+          "validFor": null,
+          "value": "AT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Azerbaigian",
+          "validFor": null,
+          "value": "AZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bahamas",
+          "validFor": null,
+          "value": "BS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bahrain",
+          "validFor": null,
+          "value": "BH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bangladesh",
+          "validFor": null,
+          "value": "BD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Barbados",
+          "validFor": null,
+          "value": "BB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Belgio",
+          "validFor": null,
+          "value": "BE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Belize",
+          "validFor": null,
+          "value": "BZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Benin",
+          "validFor": null,
+          "value": "BJ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bermuda",
+          "validFor": null,
+          "value": "BM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bhutan",
+          "validFor": null,
+          "value": "BT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bielorussia",
+          "validFor": null,
+          "value": "BY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bolivia, Stato Plurinazionale della",
+          "validFor": null,
+          "value": "BO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bonaire, Sint Eustatius e Saba",
+          "validFor": null,
+          "value": "BQ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bosnia ed Erzegovina",
+          "validFor": null,
+          "value": "BA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Botswana",
+          "validFor": null,
+          "value": "BW"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Brasile",
+          "validFor": null,
+          "value": "BR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bulgaria",
+          "validFor": null,
+          "value": "BG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Burkina Faso",
+          "validFor": null,
+          "value": "BF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Burundi",
+          "validFor": null,
+          "value": "BI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cambogia",
+          "validFor": null,
+          "value": "KH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Camerun",
+          "validFor": null,
+          "value": "CM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Canada",
+          "validFor": null,
+          "value": "CA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Capo Verde",
+          "validFor": null,
+          "value": "CV"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ciad",
+          "validFor": null,
+          "value": "TD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cile",
+          "validFor": null,
+          "value": "CL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cina",
+          "validFor": null,
+          "value": "CN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cipro",
+          "validFor": null,
+          "value": "CY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Colombia",
+          "validFor": null,
+          "value": "CO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Comore",
+          "validFor": null,
+          "value": "KM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Congo",
+          "validFor": null,
+          "value": "CG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Congo, Repubblica Democratica del",
+          "validFor": null,
+          "value": "CD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Corea, Repubblica Democratica Popolare di",
+          "validFor": null,
+          "value": "KP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Corea, Repubblica di",
+          "validFor": null,
+          "value": "KR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Costa d'Avorio",
+          "validFor": null,
+          "value": "CI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Costa Rica",
+          "validFor": null,
+          "value": "CR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Croazia",
+          "validFor": null,
+          "value": "HR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cuba",
+          "validFor": null,
+          "value": "CU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Curaçao",
+          "validFor": null,
+          "value": "CW"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Danimarca",
+          "validFor": null,
+          "value": "DK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dominica",
+          "validFor": null,
+          "value": "DM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ecuador",
+          "validFor": null,
+          "value": "EC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Egitto",
+          "validFor": null,
+          "value": "EG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "El Salvador",
+          "validFor": null,
+          "value": "SV"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Emirati Arabi Uniti",
+          "validFor": null,
+          "value": "AE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Eritrea",
+          "validFor": null,
+          "value": "ER"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Estonia",
+          "validFor": null,
+          "value": "EE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Etiopia",
+          "validFor": null,
+          "value": "ET"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Federazione Russa",
+          "validFor": null,
+          "value": "RU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Filippine",
+          "validFor": null,
+          "value": "PH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Finlandia",
+          "validFor": null,
+          "value": "FI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Francia",
+          "validFor": null,
+          "value": "FR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gabon",
+          "validFor": null,
+          "value": "GA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gambia",
+          "validFor": null,
+          "value": "GM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Georgia",
+          "validFor": null,
+          "value": "GE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Georgia del Sud e Isole Sandwich meridionali",
+          "validFor": null,
+          "value": "GS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Germania",
+          "validFor": null,
+          "value": "DE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ghana",
+          "validFor": null,
+          "value": "GH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Giamaica",
+          "validFor": null,
+          "value": "JM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Giappone",
+          "validFor": null,
+          "value": "JP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gibilterra",
+          "validFor": null,
+          "value": "GI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gibuti",
+          "validFor": null,
+          "value": "DJ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Giordania",
+          "validFor": null,
+          "value": "JO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Grecia",
+          "validFor": null,
+          "value": "GR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Grenada",
+          "validFor": null,
+          "value": "GD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Groenlandia",
+          "validFor": null,
+          "value": "GL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guadalupa",
+          "validFor": null,
+          "value": "GP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guatemala",
+          "validFor": null,
+          "value": "GT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guernsey",
+          "validFor": null,
+          "value": "GG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guinea",
+          "validFor": null,
+          "value": "GN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guinea-Bissau",
+          "validFor": null,
+          "value": "GW"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guinea Equatoriale",
+          "validFor": null,
+          "value": "GQ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guyana",
+          "validFor": null,
+          "value": "GY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guyana Francese",
+          "validFor": null,
+          "value": "GF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Haiti",
+          "validFor": null,
+          "value": "HT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Honduras",
+          "validFor": null,
+          "value": "HN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "India",
+          "validFor": null,
+          "value": "IN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Indonesia",
+          "validFor": null,
+          "value": "ID"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Iran, Repubblica Islamica di",
+          "validFor": null,
+          "value": "IR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Iraq",
+          "validFor": null,
+          "value": "IQ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Irlanda",
+          "validFor": null,
+          "value": "IE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Islanda",
+          "validFor": null,
+          "value": "IS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Isola Bouvet",
+          "validFor": null,
+          "value": "BV"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Isola di Man",
+          "validFor": null,
+          "value": "IM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Isola di Natale",
+          "validFor": null,
+          "value": "CX"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Isola Heard e Isole McDonald",
+          "validFor": null,
+          "value": "HM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Isola Norfolk",
+          "validFor": null,
+          "value": "NF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Isole Aland",
+          "validFor": null,
+          "value": "AX"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Isole Cayman",
+          "validFor": null,
+          "value": "KY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Isole Cocos (Isole Keeling)",
+          "validFor": null,
+          "value": "CC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Isole Cook",
+          "validFor": null,
+          "value": "CK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Isole Falkland (Malvinas)",
+          "validFor": null,
+          "value": "FK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Isole Far Oer",
+          "validFor": null,
+          "value": "FO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Isole Figi",
+          "validFor": null,
+          "value": "FJ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Isole Salomone",
+          "validFor": null,
+          "value": "SB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Isole Turks e Caicos",
+          "validFor": null,
+          "value": "TC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Isole Vergini, britanniche",
+          "validFor": null,
+          "value": "VG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Israele",
+          "validFor": null,
+          "value": "IL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Italia",
+          "validFor": null,
+          "value": "IT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Jersey",
+          "validFor": null,
+          "value": "JE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Kazakistan",
+          "validFor": null,
+          "value": "KZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Kenia",
+          "validFor": null,
+          "value": "KE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Kirghizistan",
+          "validFor": null,
+          "value": "KG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Kiribati",
+          "validFor": null,
+          "value": "KI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Kuwait",
+          "validFor": null,
+          "value": "KW"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lesotho",
+          "validFor": null,
+          "value": "LS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lettonia",
+          "validFor": null,
+          "value": "LV"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Libano",
+          "validFor": null,
+          "value": "LB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Liberia",
+          "validFor": null,
+          "value": "LR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Libia",
+          "validFor": null,
+          "value": "LY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Liechtenstein",
+          "validFor": null,
+          "value": "LI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lituania",
+          "validFor": null,
+          "value": "LT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lussemburgo",
+          "validFor": null,
+          "value": "LU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Macao",
+          "validFor": null,
+          "value": "MO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Macedonia, Repubblica ex Jugoslava di",
+          "validFor": null,
+          "value": "MK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Madagascar",
+          "validFor": null,
+          "value": "MG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Malawi",
+          "validFor": null,
+          "value": "MW"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Malaysia",
+          "validFor": null,
+          "value": "MY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Maldive",
+          "validFor": null,
+          "value": "MV"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mali",
+          "validFor": null,
+          "value": "ML"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Malta",
+          "validFor": null,
+          "value": "MT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Marocco",
+          "validFor": null,
+          "value": "MA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Martinica",
+          "validFor": null,
+          "value": "MQ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mauritania",
+          "validFor": null,
+          "value": "MR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mauritius",
+          "validFor": null,
+          "value": "MU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mayotte",
+          "validFor": null,
+          "value": "YT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Messico",
+          "validFor": null,
+          "value": "MX"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Moldavia, Repubblica di",
+          "validFor": null,
+          "value": "MD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Monaco",
+          "validFor": null,
+          "value": "MC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mongolia",
+          "validFor": null,
+          "value": "MN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Montenegro",
+          "validFor": null,
+          "value": "ME"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Montserrat",
+          "validFor": null,
+          "value": "MS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mozambico",
+          "validFor": null,
+          "value": "MZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Myanmar",
+          "validFor": null,
+          "value": "MM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Namibia",
+          "validFor": null,
+          "value": "NA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nauru",
+          "validFor": null,
+          "value": "NR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nepal",
+          "validFor": null,
+          "value": "NP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nicaragua",
+          "validFor": null,
+          "value": "NI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Niger",
+          "validFor": null,
+          "value": "NE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nigeria",
+          "validFor": null,
+          "value": "NG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Niue",
+          "validFor": null,
+          "value": "NU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Norvegia",
+          "validFor": null,
+          "value": "NO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nuova Caledonia",
+          "validFor": null,
+          "value": "NC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nuova Zelanda",
+          "validFor": null,
+          "value": "NZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Olanda",
+          "validFor": null,
+          "value": "NL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Oman",
+          "validFor": null,
+          "value": "OM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pakistan",
+          "validFor": null,
+          "value": "PK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Palestina",
+          "validFor": null,
+          "value": "PS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Panama",
+          "validFor": null,
+          "value": "PA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Papua Nuova Guinea",
+          "validFor": null,
+          "value": "PG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Paraguay",
+          "validFor": null,
+          "value": "PY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Perù",
+          "validFor": null,
+          "value": "PE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pitcairn",
+          "validFor": null,
+          "value": "PN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Polinesia Francese",
+          "validFor": null,
+          "value": "PF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Polonia",
+          "validFor": null,
+          "value": "PL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Portogallo",
+          "validFor": null,
+          "value": "PT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Qatar",
+          "validFor": null,
+          "value": "QA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Regno Unito",
+          "validFor": null,
+          "value": "GB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Repubblica Araba Siriana",
+          "validFor": null,
+          "value": "SY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Repubblica Ceca",
+          "validFor": null,
+          "value": "CZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Repubblica Centrafricana",
+          "validFor": null,
+          "value": "CF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Repubblica Dominicana",
+          "validFor": null,
+          "value": "DO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Repubblica Popolare Democratica del Laos",
+          "validFor": null,
+          "value": "LA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Reunion",
+          "validFor": null,
+          "value": "RE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Romania",
+          "validFor": null,
+          "value": "RO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rwanda",
+          "validFor": null,
+          "value": "RW"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sahara Occidentale",
+          "validFor": null,
+          "value": "EH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Saint Barthélemy",
+          "validFor": null,
+          "value": "BL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Saint Kitts e Nevis",
+          "validFor": null,
+          "value": "KN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Saint-Martin (parte francese)",
+          "validFor": null,
+          "value": "MF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Saint-Pierre e Miquelon",
+          "validFor": null,
+          "value": "PM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Saint Vincent e Grenadine",
+          "validFor": null,
+          "value": "VC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Samoa",
+          "validFor": null,
+          "value": "WS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "San Marino",
+          "validFor": null,
+          "value": "SM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sant'Elena, Ascensione e Tristan da Cunha",
+          "validFor": null,
+          "value": "SH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Santa Lucia",
+          "validFor": null,
+          "value": "LC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Santa Sede (Città del Vaticano)",
+          "validFor": null,
+          "value": "VA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "São Tomé e Principe",
+          "validFor": null,
+          "value": "ST"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Senegal",
+          "validFor": null,
+          "value": "SN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Serbia",
+          "validFor": null,
+          "value": "RS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Seychelles",
+          "validFor": null,
+          "value": "SC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sierra Leone",
+          "validFor": null,
+          "value": "SL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Singapore",
+          "validFor": null,
+          "value": "SG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sint Maarten (parte olandese)",
+          "validFor": null,
+          "value": "SX"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Slovacchia",
+          "validFor": null,
+          "value": "SK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Slovenia",
+          "validFor": null,
+          "value": "SI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Somalia",
+          "validFor": null,
+          "value": "SO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Spagna",
+          "validFor": null,
+          "value": "ES"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sri Lanka",
+          "validFor": null,
+          "value": "LK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Stati Uniti",
+          "validFor": null,
+          "value": "US"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sudafrica",
+          "validFor": null,
+          "value": "ZA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sudan",
+          "validFor": null,
+          "value": "SD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sudan del Sud",
+          "validFor": null,
+          "value": "SS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sultanato del Brunei",
+          "validFor": null,
+          "value": "BN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Suriname",
+          "validFor": null,
+          "value": "SR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Svalbard e Jan Mayen",
+          "validFor": null,
+          "value": "SJ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Svezia",
+          "validFor": null,
+          "value": "SE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Svizzera",
+          "validFor": null,
+          "value": "CH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Swaziland",
+          "validFor": null,
+          "value": "SZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tagikistan",
+          "validFor": null,
+          "value": "TJ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Taiwan",
+          "validFor": null,
+          "value": "TW"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tanzania, Repubblica Unita di",
+          "validFor": null,
+          "value": "TZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Territori Francesi del Sud",
+          "validFor": null,
+          "value": "TF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Territorio britannico dell'Oceano Indiano",
+          "validFor": null,
+          "value": "IO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Thailandia",
+          "validFor": null,
+          "value": "TH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Timor-Leste",
+          "validFor": null,
+          "value": "TL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Togo",
+          "validFor": null,
+          "value": "TG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tokelau",
+          "validFor": null,
+          "value": "TK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tonga",
+          "validFor": null,
+          "value": "TO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Trinidad e Tobago",
+          "validFor": null,
+          "value": "TT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tunisia",
+          "validFor": null,
+          "value": "TN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Turchia",
+          "validFor": null,
+          "value": "TR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Turkmenistan",
+          "validFor": null,
+          "value": "TM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tuvalu",
+          "validFor": null,
+          "value": "TV"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ucraina",
+          "validFor": null,
+          "value": "UA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Uganda",
+          "validFor": null,
+          "value": "UG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ungheria",
+          "validFor": null,
+          "value": "HU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Uruguay",
+          "validFor": null,
+          "value": "UY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Uzbekistan",
+          "validFor": null,
+          "value": "UZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vanuatu",
+          "validFor": null,
+          "value": "VU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Venezuela, Repubblica Bolivariana del",
+          "validFor": null,
+          "value": "VE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vietnam",
+          "validFor": null,
+          "value": "VN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Wallis e Futuna",
+          "validFor": null,
+          "value": "WF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Yemen",
+          "validFor": null,
+          "value": "YE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Zambia",
+          "validFor": null,
+          "value": "ZM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Zimbabwe",
+          "validFor": null,
+          "value": "ZW"
+        }
+      ],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [],
+      "relationshipName": null,
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": true,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "xsd:string",
+      "sortable": true,
+      "type": "picklist",
+      "unique": false,
+      "updateable": true,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": true,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 0,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": "Address",
+      "controllerName": null,
+      "createable": true,
+      "custom": false,
+      "defaultValue": null,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": false,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": false,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "Latitudine",
+      "length": 0,
+      "mask": null,
+      "maskType": null,
+      "name": "Latitude",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": true,
+      "permissionable": true,
+      "picklistValues": [],
+      "polymorphicForeignKey": false,
+      "precision": 18,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [],
+      "relationshipName": null,
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": false,
+      "scale": 15,
+      "searchPrefilterable": false,
+      "soapType": "xsd:double",
+      "sortable": true,
+      "type": "double",
+      "unique": false,
+      "updateable": true,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": true,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 0,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": "Address",
+      "controllerName": null,
+      "createable": true,
+      "custom": false,
+      "defaultValue": null,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": false,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": false,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "Longitudine",
+      "length": 0,
+      "mask": null,
+      "maskType": null,
+      "name": "Longitude",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": true,
+      "permissionable": true,
+      "picklistValues": [],
+      "polymorphicForeignKey": false,
+      "precision": 18,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [],
+      "relationshipName": null,
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": false,
+      "scale": 15,
+      "searchPrefilterable": false,
+      "soapType": "xsd:double",
+      "sortable": true,
+      "type": "double",
+      "unique": false,
+      "updateable": true,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": true,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 765,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": "Address",
+      "controllerName": null,
+      "createable": true,
+      "custom": false,
+      "defaultValue": null,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": false,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": true,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "Precisione di georeferenziazione",
+      "length": 255,
+      "mask": null,
+      "maskType": null,
+      "name": "GeocodeAccuracy",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": true,
+      "permissionable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Indirizzo",
+          "validFor": null,
+          "value": "Address"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Indirizzo vicinanze",
+          "validFor": null,
+          "value": "NearAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Blocco",
+          "validFor": null,
+          "value": "Block"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Via",
+          "validFor": null,
+          "value": "Street"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CAP esteso",
+          "validFor": null,
+          "value": "ExtendedZip"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CAP",
+          "validFor": null,
+          "value": "Zip"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Quartiere",
+          "validFor": null,
+          "value": "Neighborhood"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Città",
+          "validFor": null,
+          "value": "City"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "County",
+          "validFor": null,
+          "value": "County"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Stato",
+          "validFor": null,
+          "value": "State"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sconosciuto",
+          "validFor": null,
+          "value": "Unknown"
+        }
+      ],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [],
+      "relationshipName": null,
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": true,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "xsd:string",
+      "sortable": true,
+      "type": "picklist",
+      "unique": false,
+      "updateable": true,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": false,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 0,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": null,
+      "controllerName": null,
+      "createable": false,
+      "custom": false,
+      "defaultValue": null,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": false,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": false,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "Indirizzo",
+      "length": 0,
+      "mask": null,
+      "maskType": null,
+      "name": "Address",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": true,
+      "permissionable": true,
+      "picklistValues": [],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": true,
+      "referenceTargetField": null,
+      "referenceTo": [],
+      "relationshipName": null,
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": false,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "urn:address",
+      "sortable": false,
+      "type": "address",
+      "unique": false,
+      "updateable": false,
+      "writeRequiresMasterRead": false
+    }
+  ],
+  "hasSubtypes": false,
+  "implementedBy": null,
+  "implementsInterfaces": null,
+  "isInterface": false,
+  "isSubtype": false,
+  "keyPrefix": "0Hw",
+  "label": "Assenza risorsa",
+  "labelPlural": "Assenze risorsa",
+  "layoutable": true,
+  "listviewable": null,
+  "lookupLayoutable": null,
+  "mergeable": false,
+  "mruEnabled": true,
+  "name": "ResourceAbsence",
+  "namedLayoutInfos": [],
+  "networkScopeFieldName": null,
+  "queryable": true,
+  "recordTypeInfos": [
+    {
+      "active": true,
+      "available": true,
+      "defaultRecordTypeMapping": true,
+      "developerName": "Principale",
+      "master": true,
+      "name": "Principale",
+      "recordTypeId": "012000000000000AAA",
+      "urls": {
+        "layout": "/services/data/v56.0/sobjects/ResourceAbsence/describe/layouts/012000000000000AAA"
+      }
+    }
+  ],
+  "replicateable": true,
+  "retrieveable": true,
+  "searchLayoutable": true,
+  "searchable": true,
+  "sobjectDescribeOption": "FULL",
+  "supportedScopes": [
+    {
+      "label": "Tutte le assenze risorsa",
+      "name": "everything"
+    },
+    {
+      "label": "Assenze risorsa personali",
+      "name": "mine"
+    },
+    {
+      "label": "Assenze risorsa di proprietà dell'area di attesa",
+      "name": "queue_owned"
+    },
+    {
+      "label": "Assenze risorsa del team personale",
+      "name": "team"
+    },
+    {
+      "label": "Assenze risorsa di proprietà dell'utente",
+      "name": "user_owned"
+    }
+  ],
+  "triggerable": true,
+  "undeletable": false,
+  "updateable": true,
+  "urls": {
+    "compactLayouts": "/services/data/v56.0/sobjects/ResourceAbsence/describe/compactLayouts",
+    "rowTemplate": "/services/data/v56.0/sobjects/ResourceAbsence/{ID}",
+    "approvalLayouts": "/services/data/v56.0/sobjects/ResourceAbsence/describe/approvalLayouts",
+    "uiDetailTemplate": "https://flow-flow-8123.scratch.my.salesforce.com/{ID}",
+    "uiEditTemplate": "https://flow-flow-8123.scratch.my.salesforce.com/{ID}/e",
+    "describe": "/services/data/v56.0/sobjects/ResourceAbsence/describe",
+    "uiNewRecord": "https://flow-flow-8123.scratch.my.salesforce.com/0Hw/e",
+    "quickActions": "/services/data/v56.0/sobjects/ResourceAbsence/quickActions",
+    "layouts": "/services/data/v56.0/sobjects/ResourceAbsence/describe/layouts",
+    "sobject": "/services/data/v56.0/sobjects/ResourceAbsence"
+  }
+}

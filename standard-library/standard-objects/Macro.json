@@ -1,0 +1,4488 @@
+{
+  "actionOverrides": [],
+  "activateable": false,
+  "associateEntityType": null,
+  "associateParentEntity": null,
+  "childRelationships": [
+    {
+      "cascadeDelete": false,
+      "childSObject": "AIInsightAction",
+      "deprecatedAndHidden": false,
+      "field": "ActionId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "AIInsightValue",
+      "deprecatedAndHidden": false,
+      "field": "SobjectLookupValueId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "AIRecordInsight",
+      "deprecatedAndHidden": false,
+      "field": "TargetId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowExecutionErrorEvent",
+      "deprecatedAndHidden": false,
+      "field": "ContextRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowOrchestrationWorkItem",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowRecordRelation",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "MacroHistory",
+      "deprecatedAndHidden": false,
+      "field": "MacroId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Histories",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "MacroInstruction",
+      "deprecatedAndHidden": false,
+      "field": "MacroId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "MacroInstructionChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "MacroId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "MacroShare",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Shares",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "MacroUsage",
+      "deprecatedAndHidden": false,
+      "field": "MacroId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    }
+  ],
+  "compactLayoutable": true,
+  "createable": true,
+  "custom": false,
+  "customSetting": false,
+  "deepCloneable": false,
+  "defaultImplementation": null,
+  "deletable": true,
+  "deprecatedAndHidden": false,
+  "extendedBy": null,
+  "extendsInterfaces": null,
+  "feedEnabled": false,
+  "fields": [
+    {
+      "aggregatable": true,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 18,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": null,
+      "controllerName": null,
+      "createable": false,
+      "custom": false,
+      "defaultValue": null,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": true,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": true,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": true,
+      "inlineHelpText": null,
+      "label": "ID macro",
+      "length": 18,
+      "mask": null,
+      "maskType": null,
+      "name": "Id",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": false,
+      "permissionable": false,
+      "picklistValues": [],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [],
+      "relationshipName": null,
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": false,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "tns:ID",
+      "sortable": true,
+      "type": "id",
+      "unique": false,
+      "updateable": false,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": true,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 18,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": null,
+      "controllerName": null,
+      "createable": true,
+      "custom": false,
+      "defaultValue": null,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": true,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": true,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "ID titolare",
+      "length": 18,
+      "mask": null,
+      "maskType": null,
+      "name": "OwnerId",
+      "nameField": false,
+      "namePointing": true,
+      "nillable": false,
+      "permissionable": false,
+      "picklistValues": [],
+      "polymorphicForeignKey": true,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [
+        "Group",
+        "User"
+      ],
+      "relationshipName": "Owner",
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": false,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "tns:ID",
+      "sortable": true,
+      "type": "reference",
+      "unique": false,
+      "updateable": true,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": false,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 0,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": null,
+      "controllerName": null,
+      "createable": false,
+      "custom": false,
+      "defaultValue": false,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": true,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": true,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "Eliminato",
+      "length": 0,
+      "mask": null,
+      "maskType": null,
+      "name": "IsDeleted",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": false,
+      "permissionable": false,
+      "picklistValues": [],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [],
+      "relationshipName": null,
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": false,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "xsd:boolean",
+      "sortable": true,
+      "type": "boolean",
+      "unique": false,
+      "updateable": false,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": true,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 765,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": null,
+      "controllerName": null,
+      "createable": true,
+      "custom": false,
+      "defaultValue": null,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": false,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": true,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": true,
+      "inlineHelpText": null,
+      "label": "Nome macro",
+      "length": 255,
+      "mask": null,
+      "maskType": null,
+      "name": "Name",
+      "nameField": true,
+      "namePointing": false,
+      "nillable": false,
+      "permissionable": false,
+      "picklistValues": [],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [],
+      "relationshipName": null,
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": false,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "xsd:string",
+      "sortable": true,
+      "type": "string",
+      "unique": false,
+      "updateable": true,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": true,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 9,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": null,
+      "controllerName": null,
+      "createable": true,
+      "custom": false,
+      "defaultValue": "EUR",
+      "defaultValueFormula": null,
+      "defaultedOnCreate": true,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": true,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "Codice ISO valuta",
+      "length": 3,
+      "mask": null,
+      "maskType": null,
+      "name": "CurrencyIsoCode",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": true,
+      "permissionable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Euro",
+          "validFor": null,
+          "value": "EUR"
+        }
+      ],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [],
+      "relationshipName": null,
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": true,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "xsd:string",
+      "sortable": true,
+      "type": "picklist",
+      "unique": false,
+      "updateable": true,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": true,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 0,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": null,
+      "controllerName": null,
+      "createable": false,
+      "custom": false,
+      "defaultValue": null,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": true,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": false,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "Data creazione",
+      "length": 0,
+      "mask": null,
+      "maskType": null,
+      "name": "CreatedDate",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": false,
+      "permissionable": false,
+      "picklistValues": [],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [],
+      "relationshipName": null,
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": false,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "xsd:dateTime",
+      "sortable": true,
+      "type": "datetime",
+      "unique": false,
+      "updateable": false,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": true,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 18,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": null,
+      "controllerName": null,
+      "createable": false,
+      "custom": false,
+      "defaultValue": null,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": true,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": true,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "Creato da ID",
+      "length": 18,
+      "mask": null,
+      "maskType": null,
+      "name": "CreatedById",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": false,
+      "permissionable": false,
+      "picklistValues": [],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": false,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "tns:ID",
+      "sortable": true,
+      "type": "reference",
+      "unique": false,
+      "updateable": false,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": true,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 0,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": null,
+      "controllerName": null,
+      "createable": false,
+      "custom": false,
+      "defaultValue": null,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": true,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": false,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "Data ultima modifica",
+      "length": 0,
+      "mask": null,
+      "maskType": null,
+      "name": "LastModifiedDate",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": false,
+      "permissionable": false,
+      "picklistValues": [],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [],
+      "relationshipName": null,
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": false,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "xsd:dateTime",
+      "sortable": true,
+      "type": "datetime",
+      "unique": false,
+      "updateable": false,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": true,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 18,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": null,
+      "controllerName": null,
+      "createable": false,
+      "custom": false,
+      "defaultValue": null,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": true,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": true,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "ID ultima modifica di",
+      "length": 18,
+      "mask": null,
+      "maskType": null,
+      "name": "LastModifiedById",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": false,
+      "permissionable": false,
+      "picklistValues": [],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": false,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "tns:ID",
+      "sortable": true,
+      "type": "reference",
+      "unique": false,
+      "updateable": false,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": true,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 0,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": null,
+      "controllerName": null,
+      "createable": false,
+      "custom": false,
+      "defaultValue": null,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": true,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": false,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "Modstamp di sistema",
+      "length": 0,
+      "mask": null,
+      "maskType": null,
+      "name": "SystemModstamp",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": false,
+      "permissionable": false,
+      "picklistValues": [],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [],
+      "relationshipName": null,
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": false,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "xsd:dateTime",
+      "sortable": true,
+      "type": "datetime",
+      "unique": false,
+      "updateable": false,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": true,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 0,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": null,
+      "controllerName": null,
+      "createable": false,
+      "custom": false,
+      "defaultValue": null,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": false,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": false,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "Data ultima visualizzazione",
+      "length": 0,
+      "mask": null,
+      "maskType": null,
+      "name": "LastViewedDate",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": true,
+      "permissionable": false,
+      "picklistValues": [],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [],
+      "relationshipName": null,
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": false,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "xsd:dateTime",
+      "sortable": true,
+      "type": "datetime",
+      "unique": false,
+      "updateable": false,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": true,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 0,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": null,
+      "controllerName": null,
+      "createable": false,
+      "custom": false,
+      "defaultValue": null,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": false,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": false,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "Data ultimo riferimento",
+      "length": 0,
+      "mask": null,
+      "maskType": null,
+      "name": "LastReferencedDate",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": true,
+      "permissionable": false,
+      "picklistValues": [],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [],
+      "relationshipName": null,
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": false,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "xsd:dateTime",
+      "sortable": true,
+      "type": "datetime",
+      "unique": false,
+      "updateable": false,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": false,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 12288,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": null,
+      "controllerName": null,
+      "createable": true,
+      "custom": false,
+      "defaultValue": null,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": false,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": "richtextarea",
+      "filterable": false,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": false,
+      "highScaleNumber": false,
+      "htmlFormatted": true,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "Descrizione",
+      "length": 4096,
+      "mask": null,
+      "maskType": null,
+      "name": "Description",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": true,
+      "permissionable": false,
+      "picklistValues": [],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [],
+      "relationshipName": null,
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": false,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "xsd:string",
+      "sortable": false,
+      "type": "textarea",
+      "unique": false,
+      "updateable": true,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": false,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 0,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": null,
+      "controllerName": null,
+      "createable": false,
+      "custom": false,
+      "defaultValue": false,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": true,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": false,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "Supporta Classic",
+      "length": 0,
+      "mask": null,
+      "maskType": null,
+      "name": "IsAlohaSupported",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": false,
+      "permissionable": false,
+      "picklistValues": [],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [],
+      "relationshipName": null,
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": false,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "xsd:boolean",
+      "sortable": false,
+      "type": "boolean",
+      "unique": false,
+      "updateable": false,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": false,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 0,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": null,
+      "controllerName": null,
+      "createable": false,
+      "custom": false,
+      "defaultValue": false,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": true,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": false,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "Supporta Lightning",
+      "length": 0,
+      "mask": null,
+      "maskType": null,
+      "name": "IsLightningSupported",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": false,
+      "permissionable": false,
+      "picklistValues": [],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [],
+      "relationshipName": null,
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": false,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "xsd:boolean",
+      "sortable": false,
+      "type": "boolean",
+      "unique": false,
+      "updateable": false,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": true,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 765,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": null,
+      "controllerName": null,
+      "createable": true,
+      "custom": false,
+      "defaultValue": null,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": false,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": true,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "Applica a",
+      "length": 255,
+      "mask": null,
+      "maskType": null,
+      "name": "StartingContext",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": true,
+      "permissionable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Abbonamento alle comunicazioni",
+          "validFor": null,
+          "value": "CommSubscription"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Abilitazione alla professione",
+          "validFor": null,
+          "value": "BoardCertification"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Accordo assistenza sanitaria preventiva",
+          "validFor": null,
+          "value": "PreventiveCareAgreement"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Accordo di pagamento contratto",
+          "validFor": null,
+          "value": "ContractPaymentAgreement"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Accordo di pagamento risparmio condiviso",
+          "validFor": null,
+          "value": "SharedSavingPaymentAgreement"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Accordo tariffa sanitaria categorizzata",
+          "validFor": null,
+          "value": "CategorizedCareFeeAgreement"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Accordo tariffa sanitaria in base al percentile",
+          "validFor": null,
+          "value": "PercentileBsdCareFeeAgreement"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Accordo tariffa sanitaria pro-capite fissa",
+          "validFor": null,
+          "value": "CapitationCareFeeAgreement"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Accordo tariffa sanitaria raggruppata",
+          "validFor": null,
+          "value": "BundledCareFeeAgreement"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Accordo tariffa sanitaria standard",
+          "validFor": null,
+          "value": "StandardCareFeeAgreement"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Account",
+          "validFor": null,
+          "value": "Account"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Account gestito esterno",
+          "validFor": null,
+          "value": "DelegatedAccount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Accreditamento",
+          "validFor": null,
+          "value": "Accreditation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Acquisto sostenibilità",
+          "validFor": null,
+          "value": "SustainabilityPurchase"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Allocazione crediti di emissioni di CO2",
+          "validFor": null,
+          "value": "CrbnCreditAlloc"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Allocazione Scope per emissioni di CO2",
+          "validFor": null,
+          "value": "CrbnEmssnScopeAlloc"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Altra operazione componente",
+          "validFor": null,
+          "value": "OtherComponentTask"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Applicazione fattura a nota di credito",
+          "validFor": null,
+          "value": "CreditMemoInvApplication"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Appuntamento di servizio",
+          "validFor": null,
+          "value": "ServiceAppointment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Archivio eventi anomalia API",
+          "validFor": null,
+          "value": "ApiAnomalyEventStore"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Archivio eventi anomalia rapporto",
+          "validFor": null,
+          "value": "ReportAnomalyEventStore"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Archivio eventi credential stuffing",
+          "validFor": null,
+          "value": "CredentialStuffingEventStore"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Archivio eventi hijack della sessione",
+          "validFor": null,
+          "value": "SessionHijackingEventStore"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Area di attesa",
+          "validFor": null,
+          "value": "LocationWaitlist"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Argomento coinvolgimento",
+          "validFor": null,
+          "value": "EngagementTopic"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Articolo di prodotto",
+          "validFor": null,
+          "value": "ProductItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Articolo spedizione",
+          "validFor": null,
+          "value": "ShipmentItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Assegnazione utente veicolo",
+          "validFor": null,
+          "value": "VehicleUserAssignment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Assenza risorsa",
+          "validFor": null,
+          "value": "ResourceAbsence"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asset",
+          "validFor": null,
+          "value": "Asset"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asset polizza assicurativa",
+          "validFor": null,
+          "value": "InsurancePolicyAsset"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asset richiesta di autorizzazione",
+          "validFor": null,
+          "value": "AuthApplicationAsset"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Associazione al piano acquirente",
+          "validFor": null,
+          "value": "PurchaserPlanAssn"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Attività generante emissioni",
+          "validFor": null,
+          "value": "EmissionsActivity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Attività idrica asset stazionari",
+          "validFor": null,
+          "value": "StnryAssetWaterActvty"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Attività richiesta di prestito",
+          "validFor": null,
+          "value": "LoanApplicationAsset"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Attributo coinvolgimento del programma fedeltà",
+          "validFor": null,
+          "value": "LoyaltyPgmEngmtAttribute"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Autorità di regolamentazione",
+          "validFor": null,
+          "value": "RegulatoryAuthority"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Autorizzazione del distributore",
+          "validFor": null,
+          "value": "DistributorAuthorization"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Autorizzazione pagamento",
+          "validFor": null,
+          "value": "PaymentAuthorization"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Avviso clinico",
+          "validFor": null,
+          "value": "ClinicalAlert"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Avviso record",
+          "validFor": null,
+          "value": "RecordAlert"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Azione coercitiva in caso di violazione",
+          "validFor": null,
+          "value": "ViolationEnforcementAction"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Badge membro del programma fedeltà",
+          "validFor": null,
+          "value": "LoyaltyProgramMemberBadge"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Badge programma fedeltà",
+          "validFor": null,
+          "value": "LoyaltyProgramBadge"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Banker",
+          "validFor": null,
+          "value": "Banker"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Barriera all'assistenza sanitaria",
+          "validFor": null,
+          "value": "CareBarrier"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Calculation Procedure",
+          "validFor": null,
+          "value": "CalculationProcedure"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Campagna del programma di assistenza sanitaria",
+          "validFor": null,
+          "value": "CareProgramCampaign"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Campo ricercabile operatore sanitario",
+          "validFor": null,
+          "value": "CareProviderSearchableField"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Care Preauth",
+          "validFor": null,
+          "value": "CarePreauth"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Care Preauth Item",
+          "validFor": null,
+          "value": "CarePreauthItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Caso",
+          "validFor": null,
+          "value": "Case"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Caso del membro del programma fedeltà",
+          "validFor": null,
+          "value": "LoyaltyProgramMemberCase"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Caso denuncia",
+          "validFor": null,
+          "value": "ComplaintCase"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Caso richiesta",
+          "validFor": null,
+          "value": "ApplicationCase"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Catalogo",
+          "validFor": null,
+          "value": "ProductCatalog"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Categoria",
+          "validFor": null,
+          "value": "ProductCategory"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Categoria dimensione edificio",
+          "validFor": null,
+          "value": "BldgSizeCategory"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Categoria di tag",
+          "validFor": null,
+          "value": "TagCategory"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Censimento gruppo",
+          "validFor": null,
+          "value": "GroupCensus"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chiamata vocale",
+          "validFor": null,
+          "value": "VoiceCall"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Classe di copertura dell'indennizzo per i lavoratori",
+          "validFor": null,
+          "value": "WorkerCompCoverageClass"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cliente unità filiale",
+          "validFor": null,
+          "value": "BranchUnitCustomer"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Codice normativo",
+          "validFor": null,
+          "value": "RegulatoryCode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Commissione di transazione regolatoria",
+          "validFor": null,
+          "value": "RegulatoryTrxnFee"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Competenza",
+          "validFor": null,
+          "value": "ProfileSkill"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Componente dell'osservazione valori di assistenza sanitaria",
+          "validFor": null,
+          "value": "CareObservationComponent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Consenso della parte",
+          "validFor": null,
+          "value": "PartyConsent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Consenso per abbonamento alle comunicazioni",
+          "validFor": null,
+          "value": "CommSubscriptionConsent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Consenso per modulo di autorizzazione",
+          "validFor": null,
+          "value": "AuthorizationFormConsent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contesto operazione visita generica",
+          "validFor": null,
+          "value": "GenericVisitTaskContext"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contratto",
+          "validFor": null,
+          "value": "Contract"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contratto assicurativo",
+          "validFor": null,
+          "value": "InsuranceContract"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contratto con rete provider",
+          "validFor": null,
+          "value": "ProviderNetworkContract"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contratto di servizio",
+          "validFor": null,
+          "value": "ServiceContract"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Copertura della richiesta",
+          "validFor": null,
+          "value": "ClaimCoverage"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Copertura polizza assicurativa",
+          "validFor": null,
+          "value": "InsurancePolicyCoverage"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Corso di formazione",
+          "validFor": null,
+          "value": "TrnCourse"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Coupon",
+          "validFor": null,
+          "value": "Coupon"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Coverage Benefit",
+          "validFor": null,
+          "value": "CoverageBenefit"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Coverage Benefit Item",
+          "validFor": null,
+          "value": "CoverageBenefitItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Coverage Benefit Item Limit",
+          "validFor": null,
+          "value": "CoverageBenefitItemLimit"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Credito sostenibilità",
+          "validFor": null,
+          "value": "SustainabilityCredit"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Crisi",
+          "validFor": null,
+          "value": "Crisis"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Criteri di idoneità all'iscrizione",
+          "validFor": null,
+          "value": "EnrollmentEligibilityCriteria"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dato finanziario richiesta di prestito",
+          "validFor": null,
+          "value": "LoanApplicationFinancial"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Decision Matrix",
+          "validFor": null,
+          "value": "CalculationMatrix"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Definizione indicatore di valutazione",
+          "validFor": null,
+          "value": "AssessmentIndicatorDefinition"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Definizione indicatore operazione di valutazione",
+          "validFor": null,
+          "value": "AssessmentTaskIndDefinition"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Definizione operazione di valutazione",
+          "validFor": null,
+          "value": "AssessmentTaskDefinition"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Definizione schema tariffario",
+          "validFor": null,
+          "value": "FeeScheduleDefinition"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Definizione voucher",
+          "validFor": null,
+          "value": "VoucherDefinition"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Denuncia pubblica",
+          "validFor": null,
+          "value": "PublicComplaint"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Determinante dell'assistenza sanitaria",
+          "validFor": null,
+          "value": "CareDeterminant"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Determinante delle barriere all'assistenza sanitaria",
+          "validFor": null,
+          "value": "CareBarrierDeterminant"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dettaglio dichiarazione farmaci",
+          "validFor": null,
+          "value": "MedicationStatementDetail"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dettaglio patologia",
+          "validFor": null,
+          "value": "HealthConditionDetail"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dettaglio problema rilevato clinico",
+          "validFor": null,
+          "value": "ClinicalDetectedIssueDetail"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dettaglio procedura medica del paziente",
+          "validFor": null,
+          "value": "PatientMedicalProcedureDetail"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dettaglio richiesta di servizio clinico",
+          "validFor": null,
+          "value": "ClinicalServiceRequestDetail"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dettaglio riepilogo diagnostico",
+          "validFor": null,
+          "value": "DiagnosticSummaryDetail"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dettaglio transazione polizza assicurativa",
+          "validFor": null,
+          "value": "InsPolicyTransactionDetail"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Diagnosi interazione clinica paz.-oper.",
+          "validFor": null,
+          "value": "ClinicalEncounterDiagnosis"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Diagnosi nel piano sanitario",
+          "validFor": null,
+          "value": "CareDiagnosis"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Diagnosi sanitaria",
+          "validFor": null,
+          "value": "HealthCareDiagnosis"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dichiarazione farmaci",
+          "validFor": null,
+          "value": "MedicationStatement"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dichiarazione richiedente del prestito",
+          "validFor": null,
+          "value": "LoanApplicantDeclaration"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dipendente",
+          "validFor": null,
+          "value": "Employee"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dipendenza tipo di autorizzazione di regolamentazione aziendale",
+          "validFor": null,
+          "value": "BusRegAuthTypeDependency"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dispensazione farmaco",
+          "validFor": null,
+          "value": "MedicationDispense"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dispositivo registrato per assistenza sanitaria",
+          "validFor": null,
+          "value": "CareRegisteredDevice"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Distribuzione crediti di emissioni di CO2",
+          "validFor": null,
+          "value": "CrbnCreditDistribution"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Documento carrello Web",
+          "validFor": null,
+          "value": "WebCartDocument"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Documento contenuto operazione di valutazione",
+          "validFor": null,
+          "value": "AssessmentTaskContentDocument"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Documento Quip da visualizzazione elenco",
+          "validFor": null,
+          "value": "ContentDocumentListViewMapping"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Documento ricevuto",
+          "validFor": null,
+          "value": "ReceivedDocument"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dosaggio del farmaco per il paziente",
+          "validFor": null,
+          "value": "PatientMedicationDosage"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Elemento allocazione crediti di emissioni di CO2",
+          "validFor": null,
+          "value": "CrbnCreditAllocItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Elemento commissione di transazione regolatoria",
+          "validFor": null,
+          "value": "RegulatoryTrxnFeeItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Elemento correlato all'incidente",
+          "validFor": null,
+          "value": "IncidentRelatedItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Elemento correlato alla richiesta di modifica",
+          "validFor": null,
+          "value": "ChangeRequestRelatedItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Elemento correlato al problema",
+          "validFor": null,
+          "value": "ProblemRelatedItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Elemento emissioni da rifiuti",
+          "validFor": null,
+          "value": "WasteFootprintItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Elemento emissioni di CO2 asset stazionari",
+          "validFor": null,
+          "value": "StnryAssetCrbnFtprntItm"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Elemento feed",
+          "validFor": null,
+          "value": "FeedItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Elemento impronta idrica asset stazionari",
+          "validFor": null,
+          "value": "StnryAssetWtrFtprntItm"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Elemento insieme di altri fattori di emissione",
+          "validFor": null,
+          "value": "OtherEmssnFctrSetItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Elemento insieme di fattori di emissione da procurement",
+          "validFor": null,
+          "value": "PcmtEmssnFctrSetItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Elemento insieme di fattori di emissione da smaltimento dei rifiuti",
+          "validFor": null,
+          "value": "WstDispoEmssnFctrSetItm"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Elemento procurement Scope 3",
+          "validFor": null,
+          "value": "Scope3PcmtItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Elemento richiesta di assistenza sanitaria",
+          "validFor": null,
+          "value": "CareRequestItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Elemento schema tariffario per assistenza sanitaria",
+          "validFor": null,
+          "value": "CareFeeScheduleItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Email punto di contatto",
+          "validFor": null,
+          "value": "ContactPointEmail"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Emissioni da rifiuti",
+          "validFor": null,
+          "value": "WasteFootprint"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Emissioni di CO2 asset stazionari",
+          "validFor": null,
+          "value": "StnryAssetCrbnFtprnt"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Emissioni di CO2 asset veicolo",
+          "validFor": null,
+          "value": "VehicleAssetCrbnFtprnt"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Emissioni di CO2 Scope 3",
+          "validFor": null,
+          "value": "Scope3CrbnFtprnt"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Entità legale",
+          "validFor": null,
+          "value": "LegalEntity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Esame",
+          "validFor": null,
+          "value": "Examination"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Esame della persona",
+          "validFor": null,
+          "value": "PersonExamination"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Esaminatore della richiesta di assistenza sanitaria",
+          "validFor": null,
+          "value": "CareRequestReviewer"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Esecutore assistenza sanitaria",
+          "validFor": null,
+          "value": "CarePerformer"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Estensione richiesta di assistenza sanitaria",
+          "validFor": null,
+          "value": "CareRequestExtension"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Estensione tipo di lavoro",
+          "validFor": null,
+          "value": "WorkTypeExtension"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Evento",
+          "validFor": null,
+          "value": "Event"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Evento di vita della persona",
+          "validFor": null,
+          "value": "PersonLifeEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Farmaco",
+          "validFor": null,
+          "value": "Medication"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Farmaco nella richiesta di assistenza sanitaria",
+          "validFor": null,
+          "value": "CareRequestDrug"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fase di lavoro",
+          "validFor": null,
+          "value": "WorkStep"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fase procedura di lavoro",
+          "validFor": null,
+          "value": "WorkProcedureStep"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fatto annuale asset stazionari",
+          "validFor": null,
+          "value": "StnryAssetAnnualFact"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fatto delle previsioni account avanzate",
+          "validFor": null,
+          "value": "AdvAccountForecastFact"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fatto delle previsioni del componente del programma di produzione",
+          "validFor": null,
+          "value": "MfgProgramCpntFrcstFact"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fatto delle previsioni del programma di produzione",
+          "validFor": null,
+          "value": "MfgProgramForecastFact"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fatto delle previsioni di emissioni",
+          "validFor": null,
+          "value": "EmissionsForecastFact"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fatto delle previsioni di varianti del programma di produzione",
+          "validFor": null,
+          "value": "MfgProgramVariantFrcstFact"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fattore di emissione da auto a noleggio",
+          "validFor": null,
+          "value": "RentalCarEmssnFctr"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fattore di emissione da refrigeranti",
+          "validFor": null,
+          "value": "RefrigerantEmssnFctr"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fattore di emissione da soggiorno in hotel",
+          "validFor": null,
+          "value": "HotelStayEmssnFctr"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fattore di emissione da traffico merci",
+          "validFor": null,
+          "value": "FrgtHaulingEmssnFctr"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fattore di emissione da viaggi aerei",
+          "validFor": null,
+          "value": "AirTravelEmssnFctr"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fattore di emissione da viaggi via terra",
+          "validFor": null,
+          "value": "GroundTravelEmssnFctr"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fattore di emissione prodotto",
+          "validFor": null,
+          "value": "ProductEmissionsFactor"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fattura",
+          "validFor": null,
+          "value": "Invoice"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Feedback sul rilevamento delle minacce",
+          "validFor": null,
+          "value": "ThreatDetectionFeedback"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Finestra temporale argomento dell'appuntamento",
+          "validFor": null,
+          "value": "AppointmentTopicTimeSlot"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fonte ambientale asset stazionari",
+          "validFor": null,
+          "value": "StnryAssetEnvrSrc"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fonte di emissioni asset veicolo",
+          "validFor": null,
+          "value": "VehicleAssetEmssnSrc"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fonte di emissioni Scope 3",
+          "validFor": null,
+          "value": "Scope3EmssnSrc"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fornitore",
+          "validFor": null,
+          "value": "Supplier"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gateway di pagamento",
+          "validFor": null,
+          "value": "PaymentGateway"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gruppo",
+          "validFor": null,
+          "value": "CollaborationGroup"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gruppo appuntamenti di servizio",
+          "validFor": null,
+          "value": "ServiceAppointmentGroup"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gruppo di livelli fedeltà",
+          "validFor": null,
+          "value": "LoyaltyTierGroup"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gruppo di posizioni",
+          "validFor": null,
+          "value": "LocationGroup"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gruppo tipo di lavoro",
+          "validFor": null,
+          "value": "WorkTypeGroup"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Identificatore",
+          "validFor": null,
+          "value": "Identifier"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Identificatore interazione clinica paz.-oper.",
+          "validFor": null,
+          "value": "ClinicalEncounterIdentifier"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Immagine",
+          "validFor": null,
+          "value": "Image"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Immunizzazione paziente",
+          "validFor": null,
+          "value": "PatientImmunization"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Impegno per la riduzione emissioni",
+          "validFor": null,
+          "value": "EmssnRdctnCommitment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Impiego della persona",
+          "validFor": null,
+          "value": "PersonEmployment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Impiego richiedente del prestito",
+          "validFor": null,
+          "value": "LoanApplicantEmployment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Impronta idrica asset stazionari",
+          "validFor": null,
+          "value": "StnryAssetWaterFtprnt"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Incidente",
+          "validFor": null,
+          "value": "Incident"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Indicatore di prestazione chiave visita generica",
+          "validFor": null,
+          "value": "GnrcVstKeyPerformanceInd"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Indicatore di valutazione ispezione",
+          "validFor": null,
+          "value": "InspectionAssessmentInd"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Indicatore di valutazione per codice normativo",
+          "validFor": null,
+          "value": "RegulatoryCodeAssessmentInd"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Indicatore di valutazione per tipo di violazione",
+          "validFor": null,
+          "value": "ViolationTypeAssessmentInd"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Indirizzo punto di contatto",
+          "validFor": null,
+          "value": "ContactPointAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Indirizzo richiedente del prestito",
+          "validFor": null,
+          "value": "LoanApplicantAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Insieme di altri fattori di emissione",
+          "validFor": null,
+          "value": "OtherEmssnFctrSet"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Insieme di codici",
+          "validFor": null,
+          "value": "CodeSet"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Insieme di espressioni",
+          "validFor": null,
+          "value": "ExpressionSet"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Insieme di fattori di emissione da energia elettrica",
+          "validFor": null,
+          "value": "ElectricityEmssnFctrSet"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Insieme di fattori di emissione da procurement",
+          "validFor": null,
+          "value": "PcmtEmssnFctrSet"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Insieme di fattori di emissione da smaltimento dei rifiuti",
+          "validFor": null,
+          "value": "WstDispoEmssnFctrSet"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Intensità energia degli edifici",
+          "validFor": null,
+          "value": "BldgEnrgyIntensity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Interazione clinica paz.-oper.",
+          "validFor": null,
+          "value": "ClinicalEncounter"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Interazione di coinvolgimento",
+          "validFor": null,
+          "value": "EngagementInteraction"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Interazione di contatto",
+          "validFor": null,
+          "value": "ContactEncounter"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Intestatario richiesta di prestito",
+          "validFor": null,
+          "value": "LoanApplicationTitleHolder"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Intolleranza e allergia",
+          "validFor": null,
+          "value": "AllergyIntolerance"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Inventario delle emissioni annuale",
+          "validFor": null,
+          "value": "AnnualEmssnInventory"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Invito all'appuntamento",
+          "validFor": null,
+          "value": "AppointmentInvitation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Iscritto al programma di assistenza sanitaria",
+          "validFor": null,
+          "value": "CareProgramEnrollee"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Istantanea saldo situazione finanziaria",
+          "validFor": null,
+          "value": "FinanceBalanceSnapshot"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Knowledge",
+          "validFor": null,
+          "value": "Knowledge__kav"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lead",
+          "validFor": null,
+          "value": "Lead"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Libro giornale delle transazioni",
+          "validFor": null,
+          "value": "TransactionJournal"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Libro mastro fedeltà",
+          "validFor": null,
+          "value": "LoyaltyLedger"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Libro mastro partner programma fedeltà",
+          "validFor": null,
+          "value": "LoyaltyProgramPartnerLedger"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Licenza commerciale",
+          "validFor": null,
+          "value": "BusinessLicense"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lingua della persona",
+          "validFor": null,
+          "value": "PersonLanguage"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Livello di rete provider",
+          "validFor": null,
+          "value": "ProviderNetworkTier"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Livello fedeltà",
+          "validFor": null,
+          "value": "LoyaltyTier"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Luogo richiesta di autorizzazione",
+          "validFor": null,
+          "value": "AuthApplicationPlace"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Membro aziendale unità filiale",
+          "validFor": null,
+          "value": "BranchUnitBusinessMember"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Membro censimento gruppo",
+          "validFor": null,
+          "value": "GroupCensusMember"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Membro del programma fedeltà",
+          "validFor": null,
+          "value": "LoyaltyProgramMember"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Membro gruppo tipo di lavoro",
+          "validFor": null,
+          "value": "WorkTypeGroupMember"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Membro team del programma di assistenza sanitaria",
+          "validFor": null,
+          "value": "CareProgramTeamMember"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Membro team richiesta",
+          "validFor": null,
+          "value": "ClaimTeamMember"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Metodo di pagamento alternativo",
+          "validFor": null,
+          "value": "AlternativePaymentMethod"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Metodo di pagamento con carta",
+          "validFor": null,
+          "value": "CardPaymentMethod"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Misura dell'affidabilità della posizione",
+          "validFor": null,
+          "value": "LocationTrustMeasure"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Modello della fase di lavoro",
+          "validFor": null,
+          "value": "WorkStepTemplate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Modello del piano di lavoro",
+          "validFor": null,
+          "value": "WorkPlanTemplate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Modello di messaggistica per l'area di attesa",
+          "validFor": null,
+          "value": "LocWaitlistMsgTemplate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Modulo di autorizzazione",
+          "validFor": null,
+          "value": "AuthorizationForm"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Modulo di richiesta di autorizzazione informazioni",
+          "validFor": null,
+          "value": "InfoAuthRequestForm"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Moneta virtuale del programma fedeltà",
+          "validFor": null,
+          "value": "LoyaltyProgramCurrency"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Moneta virtuale membro fedeltà",
+          "validFor": null,
+          "value": "LoyaltyMemberCurrency"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Moneta virtuale partner programma fedeltà",
+          "validFor": null,
+          "value": "LoyaltyPgmPartnerCurrency"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Motivo interazione clinica paz.-oper.",
+          "validFor": null,
+          "value": "ClinicalEncounterReason"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nome persona",
+          "validFor": null,
+          "value": "PersonName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nota dell'autore",
+          "validFor": null,
+          "value": "AuthorNote"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nota di credito",
+          "validFor": null,
+          "value": "CreditMemo"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "NPI operatore sanitario",
+          "validFor": null,
+          "value": "HealthcareProviderNpi"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Obiettivo di riduzione emissioni",
+          "validFor": null,
+          "value": "EmssnReductionTarget"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Obiettivo di riduzione emissioni annuale",
+          "validFor": null,
+          "value": "AnnualEmssnRdctnTarget"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Obiettivo programma di assistenza sanitaria",
+          "validFor": null,
+          "value": "CareProgramGoal"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Offerta corso",
+          "validFor": null,
+          "value": "CourseOffering"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Operatore del programma di assistenza sanitaria",
+          "validFor": null,
+          "value": "CareProgramProvider"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Operatore interazione clinica paz.-oper.",
+          "validFor": null,
+          "value": "ClinicalEncounterProvider"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Operatore sanitario",
+          "validFor": null,
+          "value": "HealthcareProvider"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Operatore sanitario del programma di assistenza sanitaria",
+          "validFor": null,
+          "value": "CarePgmProvHealthcareProvider"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Operazione",
+          "validFor": null,
+          "value": "Task"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Operazione di consegna",
+          "validFor": null,
+          "value": "DeliveryTask"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Operazione di firma",
+          "validFor": null,
+          "value": "SignatureTask"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Operazione di valutazione",
+          "validFor": null,
+          "value": "AssessmentTask"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Operazione di valutazione Omni",
+          "validFor": null,
+          "value": "OmniAssessmentTask"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Operazione visita generica",
+          "validFor": null,
+          "value": "GenericVisitTask"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Opportunità",
+          "validFor": null,
+          "value": "Opportunity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ordine",
+          "validFor": null,
+          "value": "Order"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ordine di lavoro",
+          "validFor": null,
+          "value": "WorkOrder"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ordine di reso",
+          "validFor": null,
+          "value": "ReturnOrder"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ordine operazione di valutazione",
+          "validFor": null,
+          "value": "AssessmentTaskOrder"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ore di funzionamento",
+          "validFor": null,
+          "value": "OperatingHours"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Osservazione valori di assistenza sanitaria",
+          "validFor": null,
+          "value": "CareObservation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pacchetto prepagato del partner programma fedeltà",
+          "validFor": null,
+          "value": "LoyaltyPgmPtnrPrepaidPack"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pagamento",
+          "validFor": null,
+          "value": "Payment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Parametro processo programma fedeltà",
+          "validFor": null,
+          "value": "LoyaltyProgramProcessParameter"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Partecipante al corso di formazione",
+          "validFor": null,
+          "value": "TrainingCourseParticipant"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Partecipante coinvolgimento",
+          "validFor": null,
+          "value": "EngagementAttendee"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Partecipante denuncia",
+          "validFor": null,
+          "value": "ComplaintParticipant"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Partecipante interazione di contatto",
+          "validFor": null,
+          "value": "ContactEncounterParticipant"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Partecipante polizza assicurativa",
+          "validFor": null,
+          "value": "InsurancePolicyParticipant"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Partecipante richiesta",
+          "validFor": null,
+          "value": "ClaimParticipant"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Parte ricevente la visita",
+          "validFor": null,
+          "value": "VisitedParty"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Partner insieme di previsioni account avanzate",
+          "validFor": null,
+          "value": "AdvAcctForecastSetPartner"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Passività richiesta del prestito",
+          "validFor": null,
+          "value": "LoanApplicationLiability"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Patologia",
+          "validFor": null,
+          "value": "HealthCondition"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Persona",
+          "validFor": null,
+          "value": "Individual"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pianificazione del consumo",
+          "validFor": null,
+          "value": "ConsumptionSchedule"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pianificazione dell'accesso alla posizione con autorizzazione",
+          "validFor": null,
+          "value": "AuthLocationAccessSchedule"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Piano acquirente",
+          "validFor": null,
+          "value": "PurchaserPlan"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Piano di azione",
+          "validFor": null,
+          "value": "ActionPlan"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Piano di lavoro",
+          "validFor": null,
+          "value": "WorkPlan"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Piano membro",
+          "validFor": null,
+          "value": "MemberPlan"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Piano per il gruppo nel contratto",
+          "validFor": null,
+          "value": "ContractGroupPlan"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Plan Benefit",
+          "validFor": null,
+          "value": "PlanBenefit"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Plan Benefit Item",
+          "validFor": null,
+          "value": "PlanBenefitItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Poligono",
+          "validFor": null,
+          "value": "Polygon"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Polizza assicurativa",
+          "validFor": null,
+          "value": "InsurancePolicy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Portafoglio digitale",
+          "validFor": null,
+          "value": "DigitalWallet"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Portafoglio titoli",
+          "validFor": null,
+          "value": "SecuritiesHolding"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Posizione",
+          "validFor": null,
+          "value": "Location"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Posizione evasione prodotto",
+          "validFor": null,
+          "value": "ProductFulfillmentLocation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Post sociale",
+          "validFor": null,
+          "value": "SocialPost"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Principio attivo",
+          "validFor": null,
+          "value": "MedicinalIngredient"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Problema",
+          "validFor": null,
+          "value": "Problem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Problema correlato al caso",
+          "validFor": null,
+          "value": "CaseRelatedIssue"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Problema correlato alla richiesta di modifica",
+          "validFor": null,
+          "value": "ChangeRequestRelatedIssue"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Problema e incidente correlato",
+          "validFor": null,
+          "value": "ProblemIncident"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Problema riesame dichiarazione terapia farmacologica",
+          "validFor": null,
+          "value": "MedTherapyStmtReviewIssue"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Problema rilevato clinico",
+          "validFor": null,
+          "value": "ClinicalDetectedIssue"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Procedura di lavoro",
+          "validFor": null,
+          "value": "WorkProcedure"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Procedura medica del paziente",
+          "validFor": null,
+          "value": "PatientMedicalProcedure"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Procedura sanitaria",
+          "validFor": null,
+          "value": "HealthCareProcedure"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Processo programma fedeltà",
+          "validFor": null,
+          "value": "LoyaltyProgramProcess"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Prodotto",
+          "validFor": null,
+          "value": "Product2"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Prodotto del programma di assistenza sanitaria",
+          "validFor": null,
+          "value": "CareProgramProduct"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Prodotto fornitore",
+          "validFor": null,
+          "value": "SupplierProduct"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Prodotto-iscritto programma di assistenza sanitaria",
+          "validFor": null,
+          "value": "CareProgramEnrolleeProduct"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Prodotto partner fedeltà per la promozione",
+          "validFor": null,
+          "value": "PromotionLoyaltyPtnrProdt"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Prodotto richiesto",
+          "validFor": null,
+          "value": "ProductRequired"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Prodotto - Tipo di autorizzazione di regolamentazione",
+          "validFor": null,
+          "value": "RegAuthorizationTypeProduct"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Produttore",
+          "validFor": null,
+          "value": "Producer"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Profilo assicurativo",
+          "validFor": null,
+          "value": "InsuranceProfile"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Profilo aziendale",
+          "validFor": null,
+          "value": "BusinessProfile"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Progetto crediti di emissioni di CO2",
+          "validFor": null,
+          "value": "CrbnCreditProject"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Programma di assistenza sanitaria",
+          "validFor": null,
+          "value": "CareProgram"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Programma di produzione",
+          "validFor": null,
+          "value": "ManufacturingProgram"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Programma fedeltà",
+          "validFor": null,
+          "value": "LoyaltyProgram"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Proiezione disponibilità dei prodotti",
+          "validFor": null,
+          "value": "ProductAvailabilityProjection"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Promozione",
+          "validFor": null,
+          "value": "Promotion"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Promozione attributo coinvolgimento del programma fedeltà",
+          "validFor": null,
+          "value": "LoyaltyPgmEngmtAttrProm"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Promozione per il partner programma fedeltà",
+          "validFor": null,
+          "value": "LoyaltyPgmPartnerPromotion"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Proprietà cliente",
+          "validFor": null,
+          "value": "CustomerProperty"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Proprietà richiesta di prestito",
+          "validFor": null,
+          "value": "LoanApplicationProperty"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Protocollo di immunizzazione paziente",
+          "validFor": null,
+          "value": "PatientImmunizationProtocol"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Provvedimento negativo per operatore sanitario",
+          "validFor": null,
+          "value": "CareProviderAdverseAction"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Provvigione produttore",
+          "validFor": null,
+          "value": "ProducerCommission"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Punto saliente nel business",
+          "validFor": null,
+          "value": "BusinessMilestone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Punto saliente oggetto",
+          "validFor": null,
+          "value": "EntityMilestone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Punto vendita segmento promozione",
+          "validFor": null,
+          "value": "PromotionSegmentSalesStore"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Qualificatore promozione",
+          "validFor": null,
+          "value": "PromotionQualifier"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Raccomandazione dichiarazione riconciliazione farmaco",
+          "validFor": null,
+          "value": "MedReconStmtRecommendation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Raccomandazione riconciliazione farmaco",
+          "validFor": null,
+          "value": "MedReconRecommendation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ramo assicurativo autorizzato",
+          "validFor": null,
+          "value": "AuthorizedInsuranceLine"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Reazione sulla salute del paziente",
+          "validFor": null,
+          "value": "PatientHealthReaction"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Record modulo di richiesta autorizzabile",
+          "validFor": null,
+          "value": "AuthFormRequestRecord"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Reddito richiedente del prestito",
+          "validFor": null,
+          "value": "LoanApplicantIncome"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Referente",
+          "validFor": null,
+          "value": "Contact"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Registro gateway di pagamento",
+          "validFor": null,
+          "value": "PaymentGatewayLog"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Regola del processo fedeltà",
+          "validFor": null,
+          "value": "LoyaltyProgramProcessRule"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Regola di idoneità al programma di assistenza sanitaria",
+          "validFor": null,
+          "value": "CareProgramEligibilityRule"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Relazione asset",
+          "validFor": null,
+          "value": "AssetRelationship"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Relazione contesto operazione visita generica",
+          "validFor": null,
+          "value": "GnrcVstTaskContextRelation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Relazione membro del programma fedeltà e gruppo",
+          "validFor": null,
+          "value": "LoyaltyPgmGroupMbrRlnsp"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Relazione referenti-account",
+          "validFor": null,
+          "value": "AccountContactRelation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Relazione territorio di servizio",
+          "validFor": null,
+          "value": "ServiceTerritoryRelationship"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rete organismi pagatori struttura",
+          "validFor": null,
+          "value": "HealthcarePayerNetwork"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rete strutture di assistenza sanitaria",
+          "validFor": null,
+          "value": "HealthcareFacilityNetwork"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rettifica autorizzazione di pagamento",
+          "validFor": null,
+          "value": "PaymentAuthAdjustment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Richiedente del prestito",
+          "validFor": null,
+          "value": "LoanApplicant"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Richiesta",
+          "validFor": null,
+          "value": "Claim"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Richiesta di assistenza sanitaria",
+          "validFor": null,
+          "value": "CareRequest"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Richiesta di autorizzazione informazioni",
+          "validFor": null,
+          "value": "InfoAuthorizationRequest"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Richiesta di autorizzazione informazioni multiparte",
+          "validFor": null,
+          "value": "MultipartyInfoAuthRequest"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Richiesta di farmaci",
+          "validFor": null,
+          "value": "MedicationRequest"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Richiesta di licenza commerciale",
+          "validFor": null,
+          "value": "BusinessLicenseApplication"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Richiesta di modifica",
+          "validFor": null,
+          "value": "ChangeRequest"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Richiesta di prestito residenziale",
+          "validFor": null,
+          "value": "ResidentialLoanApplication"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Richiesta di servizio clinico",
+          "validFor": null,
+          "value": "ClinicalServiceRequest"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Richiesta di servizio interazione clinica paz.-oper.",
+          "validFor": null,
+          "value": "ClinicalEncounterSvcRequest"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Richiesta di una persona",
+          "validFor": null,
+          "value": "IndividualApplication"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Richiesta di verifica delle prestazioni di assistenza sanitaria",
+          "validFor": null,
+          "value": "CareBenefitVerifyRequest"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Richiesta prodotto",
+          "validFor": null,
+          "value": "ProductRequest"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Riconciliazione farmaco",
+          "validFor": null,
+          "value": "MedicationReconciliation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Riconoscimento",
+          "validFor": null,
+          "value": "Award"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Riepilogo diagnostico",
+          "validFor": null,
+          "value": "DiagnosticSummary"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Riepilogo libro mastro partner programma fedeltà",
+          "validFor": null,
+          "value": "LoyaltyPgmPtnrLdgrSummary"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Riepilogo pagamento richiesta",
+          "validFor": null,
+          "value": "ClaimPaymentSummary"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Riepilogo procurement Scope 3",
+          "validFor": null,
+          "value": "Scope3PcmtSummary"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Riesame dichiarazione terapia farmacologica",
+          "validFor": null,
+          "value": "MedicationTherapyStmtReview"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Riesame terapia farmacologica",
+          "validFor": null,
+          "value": "MedicationTherapyReview"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Riferimento alla richiesta preliminare",
+          "validFor": null,
+          "value": "PreliminaryApplicationRef"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rifiuti prodotti",
+          "validFor": null,
+          "value": "GeneratedWaste"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Riga pagamento su fattura",
+          "validFor": null,
+          "value": "PaymentLineInvoice"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rimborso",
+          "validFor": null,
+          "value": "Refund"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rischio ambientale",
+          "validFor": null,
+          "value": "EnvironmentalRisk"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Risorsa assegnata",
+          "validFor": null,
+          "value": "AssignedResource"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Risorsa di servizio",
+          "validFor": null,
+          "value": "ServiceResource"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ruolo referente opportunità",
+          "validFor": null,
+          "value": "OpportunityContactRole"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scopo di utilizzo dei dati",
+          "validFor": null,
+          "value": "DataUsePurpose"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scorecard sostenibilità",
+          "validFor": null,
+          "value": "SustainabilityScorecard"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Segmento di mercato per la promozione",
+          "validFor": null,
+          "value": "PromotionMarketSegment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Segmento promozione",
+          "validFor": null,
+          "value": "PromotionSegment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sessione di Messaggistica",
+          "validFor": null,
+          "value": "MessagingSession"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sovrapprezzo polizza assicurativa",
+          "validFor": null,
+          "value": "InsurancePolicySurcharge"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Specialità assistenza sanitaria",
+          "validFor": null,
+          "value": "CareSpecialty"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Specialità operatore sanitario",
+          "validFor": null,
+          "value": "HealthcareProviderSpecialty"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Specialità struttura operatore sanitario",
+          "validFor": null,
+          "value": "CareProviderFacilitySpecialty"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Spedizione",
+          "validFor": null,
+          "value": "Shipment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Struttura di assistenza sanitaria",
+          "validFor": null,
+          "value": "HealthcareFacility"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Struttura di assistenza sanitaria medico",
+          "validFor": null,
+          "value": "HealthcarePractitionerFacility"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Struttura interazione clinica paz.-oper.",
+          "validFor": null,
+          "value": "ClinicalEncounterFacility"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Target della promozione",
+          "validFor": null,
+          "value": "PromotionTarget"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Target metrica di assistenza sanitaria",
+          "validFor": null,
+          "value": "CareMetricTarget"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tasso di inflazione",
+          "validFor": null,
+          "value": "InflationRate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tassonomia assistenza sanitaria",
+          "validFor": null,
+          "value": "CareTaxonomy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tassonomia operatore sanitario",
+          "validFor": null,
+          "value": "HealthcareProviderTaxonomy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tassonomia specialità assistenza sanitaria",
+          "validFor": null,
+          "value": "CareSpecialtyTaxonomy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Telefono punto di contatto",
+          "validFor": null,
+          "value": "ContactPointPhone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tempistica attività",
+          "validFor": null,
+          "value": "ActivityTiming"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tempistica di abbonamento alle comunicazioni",
+          "validFor": null,
+          "value": "CommSubscriptionTiming"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Termine visualizzato farmaco",
+          "validFor": null,
+          "value": "DrugDisplayTerm"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Territorio di servizio",
+          "validFor": null,
+          "value": "ServiceTerritory"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tessera iscrizione al programma di assistenza sanitaria",
+          "validFor": null,
+          "value": "CareProgramEnrollmentCard"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Testo modulo di autorizzazione",
+          "validFor": null,
+          "value": "AuthorizationFormText"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tipo di attività aziendale",
+          "validFor": null,
+          "value": "BusinessType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tipo di autorizzazione di regolamentazione",
+          "validFor": null,
+          "value": "RegulatoryAuthorizationType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tipo di autorizzazione di regolamentazione aziendale",
+          "validFor": null,
+          "value": "BusRegAuthorizationType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tipo di barriera all'assistenza sanitaria",
+          "validFor": null,
+          "value": "CareBarrierType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tipo di canale di abbonamento alle comunicazioni",
+          "validFor": null,
+          "value": "CommSubscriptionChannelType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tipo di canale per il coinvolgimento",
+          "validFor": null,
+          "value": "EngagementChannelType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tipo di determinante dell'assistenza sanitaria",
+          "validFor": null,
+          "value": "CareDeterminantType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tipo di intervento di assistenza sanitaria",
+          "validFor": null,
+          "value": "CareInterventionType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tipo di ispezione",
+          "validFor": null,
+          "value": "InspectionType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tipo di lavoro",
+          "validFor": null,
+          "value": "WorkType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tipo di lavoro territorio di servizio",
+          "validFor": null,
+          "value": "ServiceTerritoryWorkType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tipo di vantaggio",
+          "validFor": null,
+          "value": "BenefitType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tipo di violazione",
+          "validFor": null,
+          "value": "ViolationType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Titolo di studio della persona",
+          "validFor": null,
+          "value": "PersonEducation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Transazione articolo di prodotto",
+          "validFor": null,
+          "value": "ProductItemTransaction"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Transazione finanziaria",
+          "validFor": null,
+          "value": "FinanceTransaction"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Transazione polizza assicurativa",
+          "validFor": null,
+          "value": "InsurancePolicyTransaction"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Trasferimento di prodotto",
+          "validFor": null,
+          "value": "ProductTransfer"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Turno",
+          "validFor": null,
+          "value": "Shift"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Unità filiale",
+          "validFor": null,
+          "value": "BranchUnit"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Unità organizzativa interna",
+          "validFor": null,
+          "value": "InternalOrganizationUnit"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Utente",
+          "validFor": null,
+          "value": "User"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Utente competenza",
+          "validFor": null,
+          "value": "ProfileSkillUser"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Utente messaggistica",
+          "validFor": null,
+          "value": "MessagingEndUser"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Utilizzo dei dati modulo di autorizzazione",
+          "validFor": null,
+          "value": "AuthorizationFormDataUse"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Utilizzo di energia asset stazionari",
+          "validFor": null,
+          "value": "StnryAssetEnrgyUse"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Utilizzo di energia asset veicolo",
+          "validFor": null,
+          "value": "VehicleAssetEnrgyUse"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Utilizzo di energia per auto a noleggio",
+          "validFor": null,
+          "value": "RentalCarEnrgyUse"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Utilizzo di energia per il soggiorno in hotel",
+          "validFor": null,
+          "value": "HotelStayEnrgyUse"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Utilizzo di energia per i viaggi aerei",
+          "validFor": null,
+          "value": "AirTravelEnrgyUse"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Utilizzo di energia per i viaggi via terra",
+          "validFor": null,
+          "value": "GroundTravelEnrgyUse"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Utilizzo di energia per traffico merci",
+          "validFor": null,
+          "value": "FrgtHaulingEnrgyUse"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Utilizzo insieme di previsioni account avanzate",
+          "validFor": null,
+          "value": "AdvAcctForecastSetUse"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Valore allocazione Scope per emissioni di CO2",
+          "validFor": null,
+          "value": "CrbnEmssnScopeAllocVal"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Valore intensità energia degli edifici",
+          "validFor": null,
+          "value": "BldgEnrgyIntensityVal"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Valore parametro vantaggio",
+          "validFor": null,
+          "value": "BenefitParameterValue"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Valutazione della crisi per il dipendente",
+          "validFor": null,
+          "value": "EmployeeCrisisAssessment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vantaggio",
+          "validFor": null,
+          "value": "Benefit"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vantaggio per il membro",
+          "validFor": null,
+          "value": "MemberBenefit"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Videochiamata",
+          "validFor": null,
+          "value": "VideoCall"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Violazione codice normativo",
+          "validFor": null,
+          "value": "RegulatoryCodeViolation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Visita",
+          "validFor": null,
+          "value": "Visit"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Visitatore",
+          "validFor": null,
+          "value": "Visitor"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Voce contratto",
+          "validFor": null,
+          "value": "ContractLineItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Voce elenco di controllo documento",
+          "validFor": null,
+          "value": "DocumentChecklistItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Voce in fattura",
+          "validFor": null,
+          "value": "InvoiceLine"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Voce modello del piano di lavoro",
+          "validFor": null,
+          "value": "WorkPlanTemplateEntry"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Voce nota di credito",
+          "validFor": null,
+          "value": "CreditMemoLine"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Voce operazione di firma",
+          "validFor": null,
+          "value": "SignatureTaskLineItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Voce ordine di lavoro",
+          "validFor": null,
+          "value": "WorkOrderLineItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Voce ordine di reso",
+          "validFor": null,
+          "value": "ReturnOrderLineItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Voce richiesta",
+          "validFor": null,
+          "value": "ClaimItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Voce richiesta prodotto",
+          "validFor": null,
+          "value": "ProductRequestLineItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Voce rimborso (pagamento)",
+          "validFor": null,
+          "value": "RefundLinePayment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Voucher",
+          "validFor": null,
+          "value": "Voucher"
+        }
+      ],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [],
+      "relationshipName": null,
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": true,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "xsd:string",
+      "sortable": true,
+      "type": "picklist",
+      "unique": false,
+      "updateable": false,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": true,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 18,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": null,
+      "controllerName": null,
+      "createable": true,
+      "custom": false,
+      "defaultValue": null,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": false,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": true,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "ID cartella",
+      "length": 18,
+      "mask": null,
+      "maskType": null,
+      "name": "FolderId",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": true,
+      "permissionable": false,
+      "picklistValues": [],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [
+        "Folder"
+      ],
+      "relationshipName": "Folder",
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": false,
+      "scale": 0,
+      "searchPrefilterable": true,
+      "soapType": "tns:ID",
+      "sortable": true,
+      "type": "reference",
+      "unique": false,
+      "updateable": true,
+      "writeRequiresMasterRead": false
+    },
+    {
+      "aggregatable": true,
+      "aiPredictionField": false,
+      "autoNumber": false,
+      "byteLength": 768,
+      "calculated": false,
+      "calculatedFormula": null,
+      "cascadeDelete": false,
+      "caseSensitive": false,
+      "compoundFieldName": null,
+      "controllerName": null,
+      "createable": false,
+      "custom": false,
+      "defaultValue": null,
+      "defaultValueFormula": null,
+      "defaultedOnCreate": false,
+      "dependentPicklist": false,
+      "deprecatedAndHidden": false,
+      "digits": 0,
+      "displayLocationInDecimal": false,
+      "encrypted": false,
+      "externalId": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "filteredLookupInfo": null,
+      "formulaTreatNullNumberAsZero": false,
+      "groupable": false,
+      "highScaleNumber": false,
+      "htmlFormatted": false,
+      "idLookup": false,
+      "inlineHelpText": null,
+      "label": "Nome cartella",
+      "length": 256,
+      "mask": null,
+      "maskType": null,
+      "name": "FolderName",
+      "nameField": false,
+      "namePointing": false,
+      "nillable": true,
+      "permissionable": false,
+      "picklistValues": [],
+      "polymorphicForeignKey": false,
+      "precision": 0,
+      "queryByDistance": false,
+      "referenceTargetField": null,
+      "referenceTo": [],
+      "relationshipName": null,
+      "relationshipOrder": null,
+      "restrictedDelete": false,
+      "restrictedPicklist": false,
+      "scale": 0,
+      "searchPrefilterable": false,
+      "soapType": "xsd:string",
+      "sortable": true,
+      "type": "string",
+      "unique": false,
+      "updateable": false,
+      "writeRequiresMasterRead": false
+    }
+  ],
+  "hasSubtypes": false,
+  "implementedBy": null,
+  "implementsInterfaces": null,
+  "isInterface": false,
+  "isSubtype": false,
+  "keyPrefix": "0JZ",
+  "label": "Macro",
+  "labelPlural": "Macro",
+  "layoutable": true,
+  "listviewable": null,
+  "lookupLayoutable": null,
+  "mergeable": false,
+  "mruEnabled": true,
+  "name": "Macro",
+  "namedLayoutInfos": [],
+  "networkScopeFieldName": null,
+  "queryable": true,
+  "recordTypeInfos": [
+    {
+      "active": true,
+      "available": true,
+      "defaultRecordTypeMapping": true,
+      "developerName": "Principale",
+      "master": true,
+      "name": "Principale",
+      "recordTypeId": "012000000000000AAA",
+      "urls": {
+        "layout": "/services/data/v56.0/sobjects/Macro/describe/layouts/012000000000000AAA"
+      }
+    }
+  ],
+  "replicateable": true,
+  "retrieveable": true,
+  "searchLayoutable": true,
+  "searchable": true,
+  "sobjectDescribeOption": "FULL",
+  "supportedScopes": [
+    {
+      "label": "Tutte le macro",
+      "name": "everything"
+    },
+    {
+      "label": "Macro personali",
+      "name": "mine"
+    },
+    {
+      "label": "Macro di proprietà dell'area di attesa",
+      "name": "queue_owned"
+    },
+    {
+      "label": "Macro del team personale",
+      "name": "team"
+    },
+    {
+      "label": "Macro di proprietà dell'utente",
+      "name": "user_owned"
+    }
+  ],
+  "triggerable": true,
+  "undeletable": true,
+  "updateable": true,
+  "urls": {
+    "compactLayouts": "/services/data/v56.0/sobjects/Macro/describe/compactLayouts",
+    "rowTemplate": "/services/data/v56.0/sobjects/Macro/{ID}",
+    "uiDetailTemplate": "https://flow-flow-8123.scratch.my.salesforce.com/{ID}",
+    "uiEditTemplate": "https://flow-flow-8123.scratch.my.salesforce.com/{ID}/e",
+    "describe": "/services/data/v56.0/sobjects/Macro/describe",
+    "uiNewRecord": "https://flow-flow-8123.scratch.my.salesforce.com/0JZ/e",
+    "layouts": "/services/data/v56.0/sobjects/Macro/describe/layouts",
+    "sobject": "/services/data/v56.0/sobjects/Macro"
+  }
+}
