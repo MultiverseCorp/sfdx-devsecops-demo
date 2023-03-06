@@ -2,7 +2,7 @@ public class CandidateGradeController {
     public CandidateGradeController() {   
     }
 
-    // comment 22222
+    // A COMMENT
     @AuraEnabled
     public static CandidateGradeInfo getCandidateGrade(Id contactId) {
         
@@ -36,6 +36,7 @@ public class CandidateGradeController {
         return new CandidateGradeInfo(temperature, String.valueOf(commission));
     }
     
+    // another comment
     @AuraEnabled
     public static CandidateGradeInfo getCandidateGrade2(Id contactId) {
         Contact currentContact = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
@@ -61,10 +62,6 @@ public class CandidateGradeController {
         if (seniorityCommissionMap.containsKey(currentUser.Seniority__c)) {
             commission = Double.valueOf(currentContact.Salary__c) * seniorityCommissionMap.get(currentUser.Seniority__c);
         }
-        else {
-            commission = Double.valueOf(currentContact.Salary__c) * 0.1;
-        }
-
         return new CandidateGradeInfo(temperature, String.valueOf(commission));
     }
 
