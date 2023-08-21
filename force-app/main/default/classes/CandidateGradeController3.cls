@@ -2,6 +2,8 @@
 public without sharing class CandidateGradeController3 {
     public CandidateGradeController3() {   
     }
+
+    
     
     @AuraEnabled
     public static CandidateGradeInfo getCandidateGrade4(Id contactId) {
