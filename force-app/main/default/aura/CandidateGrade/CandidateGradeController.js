@@ -4,6 +4,11 @@
         var action = cmp.get("c.getCandidateGrade");
         action.setParams({ contactId : cmp.get("v.recordId") });
 
+                // ..whatever
+        localStorage.setItem("login", login); // Noncompliant
+        sessionStorage.setItem("sessionId", sessionId); // Noncompliant
+        // ..whatever
+
         // Create a callback that is executed after 
         // the server-side action returns
         action.setCallback(this, function(response) {
