@@ -40,8 +40,8 @@
          Assert.areEqual(LATITUDE, computedCoordinates[0].lat);
          Assert.areEqual(LONGITUDE, computedCoordinates[0].lon);
      }
-     @isTest
-     static void blankAddress() {
+     
+     static void testMethod blankAddress() {
          // GIVEN
          GeocodingService.GeocodingAddress address = new GeocodingService.GeocodingAddress();
  
@@ -56,9 +56,9 @@
          );
  
          // THEN
-         Assert.areEqual(1, computedCoordinates.size(), 'Asserts that the number of coordinates is equal to 1.');
-         Assert.isNull(computedCoordinates[0].lat, 'Assert that the first coordinate is null.');
-         Assert.isNull(computedCoordinates[0].lon, 'Assert that the first coordinate is null.');
+         Assert.areEqual(1, computedCoordinates.size());
+         Assert.isNull(computedCoordinates[0].lat);
+         Assert.isNull(computedCoordinates[0].lon);
      }
      @isTest
      static void errorResponse() {
