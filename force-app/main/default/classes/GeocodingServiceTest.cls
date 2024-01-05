@@ -36,9 +36,9 @@
          );
  
          // THEN
-         Assert.areEqual(1, computedCoordinates.size(), 'Asserts that the number of coordinates is equal to 1.');
-         Assert.areEqual(LATITUDE, computedCoordinates[0].lat, 'Assert that the latitude and longitude are equal.');
-         Assert.areEqual(LONGITUDE, computedCoordinates[0].lon, 'Asserts that the longitude of the first coordinate is equal to the longitude of the first coordinate.');
+         Assert.areEqual(1, computedCoordinates.size());
+         Assert.areEqual(LATITUDE, computedCoordinates[0].lat);
+         Assert.areEqual(LONGITUDE, computedCoordinates[0].lon);
      }
      @isTest
      static void blankAddress() {
