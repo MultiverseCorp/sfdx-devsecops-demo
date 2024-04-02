@@ -2,7 +2,31 @@ public class CandidateGradeController {
     public CandidateGradeController() {   
     }
 
+    //Below method is a recursive method and should cause a warning.
+    public static customer_Obj__c solveQueueRic(List<customer_Obj__c> COset,Integer index,customer_Obj__c head){
+        customer_Obj__c lg;
+        if(index == 0){
+            lg = COset[index];
+            head = lg;
+            return solveQueueRic(COset,index+1,head);//This is recursive call and clayton should flag it as warning.}
+            if(index < COset.size()){
+                lg = COset[index];
+                if(lg.Createddate < COset[index].Createddate){
+                    head = lg;
+                }
+                return solveQueueRic(index+1,head);//This is not a recursive call and clayton should not flag this line as warning.
+        }
+        return head;
+    }
 
+
+    public static customer_Obj__c solveQueueRic(Integer index,customer_Obj__c head){
+        if(index==1){
+		    return head;
+	    }
+    }
+
+    
     // comment 22222 gianc
     @AuraEnabled
     public static CandidateGradeInfo getCandidateGrade(Id contactId) {
