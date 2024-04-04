@@ -7,7 +7,15 @@ import findRecords from '@salesforce/apex/LookupController.findRecords';
 
 import New from '@salesforce/label/c.New';
 
+const x
+const x
+const x
+const x
+const x
+const x
+
 export default class LightningInputLookup extends LightningElement {
+
 
     /*all custom labels*/
     labels={
