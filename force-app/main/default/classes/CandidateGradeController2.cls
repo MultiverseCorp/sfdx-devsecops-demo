@@ -15,6 +15,145 @@ public without sharing class CandidateGradeController2 {
             Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
         }
 
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+
+
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+
         for (int i = 0; i < 6; i++) {
             Contact currentContactloop2 = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
         }
