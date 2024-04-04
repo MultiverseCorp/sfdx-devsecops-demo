@@ -3,8 +3,33 @@ public without sharing class CandidateGradeController2 {
     public CandidateGradeController2() {   
     }
     
+    // ..whatever
+    localStorage.setItem("login", login); // Noncompliant
+    sessionStorage.setItem("sessionId", sessionId); // Noncompliant
+    // ..whatever
+
     @AuraEnabled
     public static CandidateGradeInfo getCandidateGrade4(Id contactId) {
+
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+
+        for (int i = 0; i < 6; i++) {
+            Contact currentContactloop2 = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactl3 = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+
+        for (int i = 0; i < 5; i++) {
+            Contact currentContact = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+
+        for (int i = 0; i < 5; i++) {
+            Contact currentContact = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
         Contact currentContact = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
         User currentUser = [SELECT Seniority__c FROM User where Id = :UserInfo.getUserId()];
         String temperature = '';
