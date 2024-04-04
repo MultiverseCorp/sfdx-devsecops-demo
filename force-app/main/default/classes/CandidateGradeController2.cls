@@ -11,6 +11,11 @@ public without sharing class CandidateGradeController2 {
     @AuraEnabled
     public static CandidateGradeInfo getCandidateGrade4(Id contactId) {
 
+
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        }
+        
         for (int i = 0; i < 5; i++) {
             Contact currentContactloo = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
         }
