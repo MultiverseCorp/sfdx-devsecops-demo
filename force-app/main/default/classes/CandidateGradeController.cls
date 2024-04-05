@@ -12,7 +12,7 @@ public class CandidateGradeController {
         String temperature = '';
         Double commission = 0;
 
-for (int i = 0; i < 6; i++) {
+for (int i = 0; i < 7; i++) {
             Contact currentContact22 = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
         }
         
