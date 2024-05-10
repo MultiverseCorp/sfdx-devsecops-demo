@@ -3,7 +3,7 @@ public class CandidateGradeController {
     }
 
 
-    // comment 222223 gianc
+    // comment 2232223 gianc
     @AuraEnabled
     public static CandidateGradeInfo getCandidateGrade(Id contactId) {
         
