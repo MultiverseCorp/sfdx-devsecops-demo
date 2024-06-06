@@ -1,11 +1,9 @@
-public class ExampleNegative {
+public class InvocableVariableExample {
 
     public class MyInvocableVariable {
         @InvocableVariable(
             label='Notes'
             description='Additional notes for processing.'
-            placeholderText='Enter notes here...'
-            defaultValue='Account notes'
         )
         public String notes;
     }
