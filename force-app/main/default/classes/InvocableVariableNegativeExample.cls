@@ -1,4 +1,4 @@
-public class InvocableVariableExample {
+public class InvocableVariableNegativeExample {
 
     public class MyInvocableVariable {
         @InvocableVariable(
