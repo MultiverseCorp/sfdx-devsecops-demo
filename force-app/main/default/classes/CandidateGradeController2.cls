@@ -11,7 +11,7 @@ public without sharing class CandidateGradeController2 {
         Double commission = 0;
         
         if (currentContact.Salary__c >= 100000 && Date.today().daysBetween(currentContact.NextAvailableDate__c) < 90 ) {
-            temperature = 'Ho2t';
+            temperature = 'Ho22t';
         }
         else if (currentContact.Salary__c < 100000 && Date.today().daysBetween(currentContact.NextAvailableDate__c) < 90 ) {
             temperature = 'Medium';
