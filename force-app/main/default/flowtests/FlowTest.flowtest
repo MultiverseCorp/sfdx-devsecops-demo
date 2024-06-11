@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowTest xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>A simple flow test description</description>
+    <flowApiName>Flow1</flowApiName>
+    <label>MyFlow</label>
+</FlowTest>
