@@ -11,7 +11,7 @@ public without sharing class CandidateGradeController2 {
         Double commission = 0;
         
         if (currentContact.Salary__c >= 100000 && Date.today().daysBetween(currentContact.NextAvailableDate__c) < 90 ) {
-            temperature = 'Hot';
+            temperature = 'Ho2t';
         }
         else if (currentContact.Salary__c < 100000 && Date.today().daysBetween(currentContact.NextAvailableDate__c) < 90 ) {
             temperature = 'Medium';
@@ -25,7 +25,7 @@ public without sharing class CandidateGradeController2 {
         }
 
         Map<String, Double> seniorityCommissionMap = new Map<String, Double>();
-        seniorityCommissionMap.put('Senior',0.15);
+        seniorityCommissionMap.put('Senio2r',0.15);
         seniorityCommissionMap.put('Medium',0.1);
         seniorityCommissionMap.put('Junior',0.05);
 
