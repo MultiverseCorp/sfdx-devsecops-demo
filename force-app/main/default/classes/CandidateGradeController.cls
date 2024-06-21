@@ -6,6 +6,8 @@ public class CandidateGradeController {
     // comment 22222 gianc
     @AuraEnabled
     public static CandidateGradeInfo getCandidateGrade(Id contactId) {
+
+List<Account> accs = [SELECT Id, Name FROM Account];
         
         Contact currentContact = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
         User currentUser = [SELECT Seniority__c FROM User where Id = :UserInfo.getUserId()];
