@@ -3,7 +3,7 @@ public class CandidateGradeController {
     }
 
 
-    // comment 2222222 gianc
+    // comment 33 gianc
     @AuraEnabled
     public static CandidateGradeInfo getCandidateGrade(Id contactId) {
         
@@ -12,7 +12,7 @@ public class CandidateGradeController {
         String temperature = '';
         Double commission = 0;
         
-        if (currentContact.Salary__c >= 500 && Date.today().daysBetween(currentContact.NextAvailableDate__c) < 90 ) {
+        if (currentContact.Salary__c >= 500 && Date.today().daysBetween(currentContact.NextAvailableDate__c) < 91 ) {
             temperature = 'Hot';
         }
         else if (currentContact.Salary__c < 500 && Date.today().daysBetween(currentContact.NextAvailableDate__c) < 90 ) {
