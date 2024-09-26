@@ -19,7 +19,11 @@ public class CandidateGradeController {
             temperature = 'Medium';
         }
         else {
-            temperature = 'Cold';
+            temperature = 'Too Cold';
+        }
+        
+        for (int i = 0; i < 5; i++) {
+            Contact currentContactloop = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
         }
 
         Map<String, Double> seniorityCommissionMap = new Map<String, Double>();
