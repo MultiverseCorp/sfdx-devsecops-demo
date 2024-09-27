@@ -5,9 +5,12 @@ public class CandidateGradeController {
 
     // comment 2222222 gianc
     @AuraEnabled
-    public static CandidateGradeInfo getCandidateGrade(Id contactId) {
+    public static CandidateGradeInfo getCandidateGrade(String contactId, Id contactIdlast) {
         
-        Contact currentContact = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactId];
+        // Build the query
+        String selectQueryString = 'SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = \'' + contactId + '\'';
+        Contact currentContact = Database.query(selectQueryString);
+        
         User currentUser = [SELECT Seniority__c FROM User where Id = :UserInfo.getUserId()];
         String temperature = '';
         Double commission = 0;
@@ -20,6 +23,10 @@ public class CandidateGradeController {
         }
         else {
             temperature = 'Cold';
+        }
+        
+        for (int i = 0; i < 5; i++) {
+            Contact currentContact = [SELECT Name, Salary__c, NextAvailableDate__c FROM Contact where Id = :contactIdlast];
         }
 
         Map<String, Double> seniorityCommissionMap = new Map<String, Double>();
