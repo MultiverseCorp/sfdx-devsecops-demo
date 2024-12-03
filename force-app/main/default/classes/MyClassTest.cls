@@ -8,8 +8,8 @@ public class MyClassTest {
         List<Account> lstAcc = DA_TestDataFactory.makeAccounts(1);
         lstAcc[0].BillingCountryCode = 'DE';
         lstAcc[0].Billing_Id__c = 'AccBillingDE';
-        lstAcc[0].BillingStreet = 'BillingStreet2';
-        //lstAcc[0].BillingState = 'BillingState2';
+        lstAcc[0].BillingStreet = 'BillingStreet4';
+        //lstAcc[0].BillingState = 'BillingState4';
         lstAcc[0].BillingPostalCode = 'BillingPostalCode';
         lstAcc[0].BillingCity = 'BillingCity';
         insert lstAcc;
