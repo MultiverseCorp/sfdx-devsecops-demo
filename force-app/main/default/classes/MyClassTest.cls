@@ -5,7 +5,7 @@ public class MyClassTest {
     static void testSetup() {
 
         //Account
-        List<Account> lstAcc = DA_TestDataFactory.makeAccounts(1);
+        List<Account> lstAcc = DA_TestDataFactory.makeAccounts(2);
         lstAcc[0].BillingCountryCode = 'DE';
         lstAcc[0].Billing_Id__c = 'AccBillingDE';
         lstAcc[0].BillingStreet = 'BillingStreet';
@@ -15,7 +15,7 @@ public class MyClassTest {
         insert lstAcc;
 
 	//Contact
-        List<Contact> lstCont = DA_TestDataFactory.makeContacts(lstAcc[0].Id, 3);
+        List<Contact> lstCont = DA_TestDataFactory.makeContacts(lstAcc[0].Id, 2);
         lstCont[0].Billing_ID_Contacts__c = 'ConBillingDE';
         lstCont[0].MailingCountryCode = 'DE';
         lstCont[0].DA_EGCID__c = 'egcidDE';
